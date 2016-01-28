@@ -1,0 +1,497 @@
+
+section.fagpersoner {
+	background-color: rgba(0, 0, 0, 0.05)!important;
+	max-width: 100%;
+
+	.fagpersoner-container {
+		max-width: 1140px;
+    	margin: 0 auto;
+    	// padding: 40px 0;
+    	padding-top: 40px;
+	}
+
+	.ansatt {
+	    width: 32%;
+	    min-height: 380px;
+	    display: inline-block;
+	    background-color: #ffffff;
+	    font-size: 16px;
+	    margin: 0 2% 50px 0;
+	    padding-bottom: 0px;
+	    vertical-align: top;
+
+	    &:nth-of-type(3n+0) {
+	    	margin-right: 0;
+	    }
+	    .bilde {
+	    	height: auto;
+	    	max-height: 200px;
+	    	display: block;
+	    	margin-bottom: 20px;
+	    	overflow: hidden;
+
+	    	img {
+	    		width: 100%;
+	    	}
+	    }
+	    .navn {
+	    	font-size: 16px;
+	    	// font-weight: bold;
+	    	font-family: 'FFClanWebMedium', sans-serif;
+	    	margin-bottom: 10px;
+	    }
+	    .navn, .stilling, .epost, .telefon, .last_ned_bilde {
+	    	margin-left: 15px;
+	    	line-height: 1.5;
+	    }
+	    .stilling {
+    	    margin: 0px 15px 10px;
+    	    margin-bottom: 20px;
+	    }
+	    .epost {
+	    	margin-bottom: 20px;
+	    }
+	    .last_ned_bilde {
+	    	margin: 20px 15px 0;
+	    }
+
+	}
+}
+
+.page-template-fpa-bolig-samleside, 
+.page-template-fpa-finans-samleside, 
+.page-template-fpa-digital-samleside,
+.page-template-fpa-mat-og-handel-samleside,
+.page-template-fpa-offentlige-tjenester {
+	.omrade {
+		margin-bottom: 40px;
+	}
+}
+
+.page-template-innlegg {
+	.omrade {
+		margin-bottom: 80px;
+	}
+}
+
+.page-template-innlegg, 
+.page-template-fpa-bolig-samleside, 
+.page-template-fpa-finans-samleside, 
+.page-template-fpa-digital-samleside,
+.page-template-fpa-mat-og-handel-samleside,
+.page-template-fpa-offentlige-tjenester {
+	.related {
+		a {
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	a.ingresslink:hover {
+		text-decoration: none;
+	}
+	
+	.thirds-container {
+
+		max-width: $pagemaxwidth;
+		margin: auto;
+		margin-bottom: 40px;
+	}
+	
+	.thirds {
+		width: 32%;
+		height: auto;
+		display: inline-block;
+		margin-right: 2%;
+		vertical-align: top;
+
+		img.thirds {
+			// height: 230px;
+			width: 100%;
+			margin-bottom: 20px;
+			display: block;
+			background-color: $black-10;
+		}
+		.thirds-text {
+			 h4{font-size: 22px;}
+		}
+
+	}
+	.thirds:nth-child(3) {
+		margin-right: 0;
+	}
+
+	section.vimener {
+
+		.dropdown {
+			.child {
+				p:hover {
+					text-decoration: none;
+				}
+			}
+		}
+
+		.child {
+			width: 100%;
+		    max-width: 100%;
+		    height: auto;
+		    display: block;
+		    float: left;
+		    margin-right: 0%;
+		    margin-bottom: 40px;
+		    box-sizing: border-box;
+		    text-align: left;
+		    vertical-align: top;
+
+		    h3 {
+		    	&:hover {
+		    		text-decoration: underline;
+		    	}
+		    }
+
+		    .col-l, .col-r {
+		    	float: left;
+		    }
+		    .col-l {
+		    	width: 53%;
+		    	margin-right: 5%;
+
+		    	a:hover {
+		    		text-decoration: none;
+		    	}
+		    }
+		    .col-r {
+		    	width: 42%;
+
+		    	.half-image {
+
+		    	}
+		    }
+		}
+	}
+
+	main.horinger {
+		.child {
+			width: 49%;
+		    max-width: 49%;
+		    height: auto;
+		    display: block;
+		    float: left;
+		    margin-right: 2%;
+		    margin-bottom: 18px;
+		    box-sizing: border-box;
+		    text-align: left;
+		    vertical-align: top;
+		}
+		.child:nth-child(2n+0) {
+		    margin-right: 0;
+		}
+	}
+}
+.half-image {
+    float: right;
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media screen and (max-width: 1025px) {
+	.page-template-innlegg, 
+	.page-template-fpa-bolig-samleside, 
+	.page-template-fpa-finans-samleside, 
+	.page-template-fpa-digital-samleside,
+	.page-template-fpa-mat-og-handel-samleside,
+	.page-template-fpa-offentlige-tjenester {
+		.related {
+			// section,.head-container,.thirds-container {
+			// 	padding: 0 20px;
+			// }
+		}
+		section.fagpersoner {
+			.fagpersoner-container {
+				padding: 40px 20px;
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width:769px){
+	section.pressemeldinger, section.vimener {
+
+		/* Three each row */
+		// .dropdown {
+
+		// 	.child {
+		// 	    width: 32%;
+		// 	    max-width: 32%;
+		// 	    height: auto;
+		// 	    min-height: 380px;
+		// 	    max-height: 460px;
+		// 	    display: inline-block;
+		// 	    margin-right: 2%;
+		// 	    margin-bottom: 18px;
+		// 	    box-sizing: border-box;
+		// 	    text-align: left;
+		// 	    vertical-align: top;
+		// 	    overflow: hidden;
+
+		// 	    &:nth-of-type(3n+0) {
+		// 	    	margin-right: 0;
+		// 	    }
+		// 	}
+		// 	.child.old {
+		// 		height: auto;
+		// 		min-height: 150px;
+
+		// 	}
+		// 	.article-image {
+		// 		width: 100%;
+		// 	    min-height: 245px;
+		// 	    margin-bottom: 20px;
+		// 	    background-color: rgba(80, 80, 80, 0.4);
+		// 	}
+		// }
+		/* end */
+
+		/* Two each row */
+		.dropdown {
+
+			.child {
+			    width: 49%;
+			    max-width: 49%;
+			    height: auto;
+			    // min-height: 380px;
+			    max-height: 460px;
+			    display: inline-block;
+			    margin-right: 2%;
+			    margin-bottom: 18px;
+			    box-sizing: border-box;
+			    text-align: left;
+			    vertical-align: top;
+			    overflow: hidden;
+
+			    &:nth-of-type(2n+0) {
+			    	margin-right: 0;
+			    }
+			}
+			.child.old {
+				height: auto;
+				min-height: 150px;
+
+			}
+			.article-image {
+				width: 100%;
+			    // min-height: 245px;
+			    margin-bottom: 20px;
+			    background-color: rgba(80, 80, 80, 0.4);
+			}
+		}
+		/* end */
+	}
+}
+@media screen and (max-width: 768px){
+	section.pressemeldinger, section.vimener {
+
+		h3 {
+    	font-size: 3.5vw;
+	    }
+
+		.dropdown {
+
+			.child {
+			    width: 49%;
+			    max-width: 49%;
+			    height: auto;
+			    display: block;
+			    float: left;
+			    margin-right: 2%;
+			    margin-bottom: 18px;
+			    box-sizing: border-box;
+			    text-align: left;
+			    vertical-align: top;
+
+			    &:nth-of-type(2n+0) {
+			    	margin-right: 0!important;
+			    }
+			    &:nth-of-type(3n+0) {
+			    	margin-right: 2%;
+			    }
+			}
+			.article-image {
+				width: 100%;
+			    min-height: initial;
+			    margin-bottom: 10px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 650px){
+	section.pressemeldinger, section.vimener {
+		.dropdown {
+			.child {
+			    height: auto;
+			    min-height: 330px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 550px){
+	section.pressemeldinger, section.vimener {
+		.dropdown {
+			.child {
+			    height: auto;
+			    min-height: 330px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 480px){
+	.page-template-innlegg, 
+	.page-template-fpa-bolig-samleside, 
+	.page-template-fpa-finans-samleside, 
+	.page-template-fpa-digital-samleside,
+	.page-template-fpa-mat-og-handel-samleside,
+	.page-template-fpa-offentlige-tjenester {
+
+		section.vimener {
+			.child {
+				width: 100%;
+			    max-width: 100%;
+			    height: auto;
+			    display: block;
+			    float: none;
+			    margin-right: 0%;
+			    margin-bottom: 18px;
+			    box-sizing: border-box;
+			    text-align: left;
+			    vertical-align: top;
+			    margin-bottom: 40px;
+
+			    // height: 520px;
+			    // position: relative;
+
+			    .col-l, .col-r {
+			    	width: 100%;
+			    	float: right;
+			    	// position: absolute;
+			    }
+			    .col-l {
+			    	margin-right: 0;
+			    	// bottom: 0;
+			    	padding-top: 10px;
+			    	float: none;
+
+			    	h3 {
+			    		min-height: 60px;
+			    	}
+
+			    }
+			    .col-r {
+			    	// min-height: 0;
+			    	// margin-top: 0;
+			    	float: right;
+			    	margin-bottom: 10px;
+			    	// top: 0;
+			    }
+			}
+		}
+
+		.thirds {
+			width: 100%;
+			height: auto;
+			display: inline-block;
+			margin-right: 0;
+			vertical-align: top;
+			margin-bottom: 40px;
+
+			h4 {
+				margin: 0;
+			}
+
+			img.thirds {
+				// height: 230px;
+				width: 100%;
+				margin-bottom: 20px;
+				display: block;
+				background-color: $black-10;
+			}
+			.thirds-text {
+				 h4{font-size: 22px;}
+			}
+
+		}
+		.thirds:nth-child(3) {
+			margin-right: 0;
+			margin-bottom: 0;
+		}
+
+		main.horinger {
+			.child {
+				width: 100%;
+			    max-width: 100%;
+			    height: auto;
+			    display: block;
+			    float: left;
+			    margin-right: 0;
+			    margin-bottom: 18px;
+			    box-sizing: border-box;
+			    text-align: left;
+			    vertical-align: top;
+			}
+			.child:nth-child(2n+0) {
+			    margin-right: 0;
+			}
+		}
+		section.fagpersoner {
+			.ansatt {
+	    		width: 100%;
+	    	}
+		}
+		section.fagpersoner {
+			margin-top: 0;
+			padding-top: 0;
+			.fagpersoner-container {
+				padding: 40px 10px;
+			}
+		}
+	}
+	section.pressemeldinger, section.vimener {
+
+		h3 {
+    	font-size: 6vw;
+	    }
+
+		.dropdown {
+
+			.child {
+			    width: 100%;
+			    max-width: 100%;
+			    height: auto;
+			    min-height: initial;
+
+			    margin-right: 0;
+			    margin-left:0;
+			    margin-bottom: 40px;
+
+			    &:nth-of-type(2n+0) {
+			    	margin-right: 0;
+			    }
+			    &:nth-of-type(3n+0) {
+			    	margin-right: 0;
+			    }
+			}
+			.article-image {
+				width: 100%;
+			    min-height: initial;
+			    margin-bottom: 10px;
+			}
+		}
+	}
+
+	
+}

@@ -1,0 +1,403 @@
+.page-template-kontakt-oss .contentfield, .page-template-contact-us .contentfield{
+	max-width: 100%;
+	padding: 40px 0;
+}
+.page-template-kontakt-oss, .page-template-contact-us {
+	.header {
+	}
+
+	.ingressteksten {
+		padding-left: 0;
+	}
+
+.ansatt {
+    width: 32%;
+    height: auto;
+    display: inline-block;
+    background-color: $white;
+    font-size: 16px;
+    margin: 0 2% 50px 0;
+    padding-bottom: 50px;
+    vertical-align: top;
+
+	    &:nth-of-type(3n+0) {
+	    	margin-right: 0;
+	    }
+
+	    .bilde {
+	    	height: auto;
+	    	max-height: 200px;
+	    	display: block;
+	    	margin-bottom: 10px;
+	    	overflow: hidden;
+
+	    	img {
+	    		width: 100%;
+	    	}
+	    }
+	    .navn {
+	    	font-size: 16px;
+	    	font-weight: bold;
+	    }
+	    .navn, .stilling, .epost, .telefon, .pressebilder {
+	    	margin-left: 15px;
+	    	line-height: 1.5;
+	    }
+	    .stilling {
+	    	margin: 10px 15px;
+	    }
+	    .pressebilder {
+	    	text-decoration: underline;
+	    	margin: 10px;
+	    }
+	}
+
+	.blue_button {
+		width: 15.63%;
+    	margin: .62%;
+	    display: inline-block;
+	    min-height: 55px;
+	    max-height: 55px;
+	    box-sizing: border-box;
+	    background-color: #99B6BC;
+	    text-decoration: none;
+	    text-align: center;
+	    vertical-align: middle;
+	    font-family: 'FFClanWebMedium';
+
+	    a {
+	    	color: #000;
+	    }
+	    &:hover {
+	    	background-color: #CEDCDF;
+	    }
+	}
+
+	.main, main {
+		.parent {
+			max-width: $pagemaxwidth;
+			margin: 0 auto;
+		}
+		.topheader {
+			padding: 0!important;
+			margin: 0;
+			background-color: transparent;
+		}
+
+	}
+	.ingressteksten {
+		text-align: left;
+		max-width: 70%;
+		font-size: 16px;
+		margin: initial;
+		margin-bottom: 40px;
+	}
+	.threecolumn {
+		min-height: 230px;
+		margin: 0;
+		margin-right: 30px;
+
+		&:nth-child(4n+0) {
+			margin-left:0;
+		}
+		&:nth-child(3n+0) {
+			margin-right: 0;
+		}
+	}
+	.kart {
+		height: auto;
+		width: 100%;
+		display: block;
+		padding: 0 !important;
+	}
+	#map-canvas {
+		width:100%;
+		height:445px;
+		margin:0px;
+		padding:0px;
+	}
+
+	.wp-content {
+		// background-color: $grey-10;
+		padding-top: 0px;
+	}
+	.wp-ansatte {
+		background-color: $grey-10;
+	}
+
+	span.s1 {
+		max-width: 740px;
+		display: block;
+	}
+	.parent-container {
+
+		overflow: hidden;
+	}
+	.parent-content {
+		.p1 {
+			text-align: left;
+		}
+	}
+	.threecolumn {
+		a {
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.infoboks-container, .office, .employees {
+	max-width: $pagemaxwidth;
+	margin: 0 auto;
+}
+.b1 {
+	background-color: $blue-40;
+	hr.short-hr {
+		background-color: $white;
+	}
+}
+.b2 {
+	background-color: $blue-20;
+}
+.b3 {
+	background-color: $blue-10;
+}
+.b4 {
+	background-color: $blue-40;
+	hr.short-hr {
+		display: none;
+	}
+}
+.infoboks {
+	padding: 50px 0;
+
+	display: block;
+
+	.left-col {
+	    width: 45%;
+	    display: block;
+	    float: left;
+	}
+	.right-col {
+		width: 40%;
+		display: block;
+		float: right;
+		&::after {
+			clear: both;
+		}
+	}
+	hr {
+		bottom: 0;
+		margin: 0 0 40px 0;
+		display: block;
+	}
+
+	.white_button {
+		width: 100%;
+		box-sizing: border-box;
+	}
+}
+.infoboks:nth-of-type(1) {
+	background-color: $black-100;
+	display: none;
+}
+
+.employees .pressebilder {
+	padding: 0;
+}
+
+.pressebilder {
+	.image-no-info {
+	    width: 32%;
+	    margin-right: 2%;
+	    margin: 10px 2% 10px 0;
+	    float: left;
+	    // min-height: 420px;
+	    background-color: $white;
+
+	    &:nth-of-type(3n+0) {
+	    	margin-right: 0;
+	    }
+
+	    .ansatt-info {
+	    	padding: 15px;
+
+	    	.ansatt-data {
+	    		margin: 0;
+	    	}
+	    	.ansatt-navn {
+	    		// font-weight: bold;
+	    		font-family: 'FFClanWebMedium';
+	    		font-size: 16px;
+	    	}
+	    	.ansatt-stilling {
+	    		margin: 10px 0;
+	    		min-height: 48px;
+	    	}
+	    	.ansatt-telefon {
+	    		min-height: 24px;
+	    	}
+	    	.ansatt-epost {
+	    		min-height: 24px;
+	    	}
+	    }
+	}
+
+	h5 {
+		margin: 8px 0 5px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.page-template-kontakt-oss, .page-template-contact-us {
+		h1 {
+			font-size: 6vw;
+		}
+		h2 {
+			clear: left;
+		}
+		#map-canvas {
+			width:100%;
+			height:345px;
+			margin:0px;
+			padding:0px;
+		}
+
+		.blue_button {
+		    width: 32.3%;
+		}
+
+		.blue_button:nth-child(4) {
+		    margin-left: 0px;
+		}
+	}
+	.page-template-kontakt-oss, .page-template-contact-us {
+
+		.ingressteksten {
+			text-align: left;
+			max-width: 100%;
+		}
+		.pressebilder .image-no-info {
+			width: 49%;
+			margin-right: 2%;
+
+			&:nth-child(2n+0) {
+				margin-right: 0;
+			}
+		}
+
+	}
+}
+@media screen and (max-width: 1025px) {
+	.page-template-kontakt-oss, .page-template-contact-us {
+    .wrapper > main {
+      width : 100%;
+      margin : 0 auto;
+
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .threecolumn {
+		min-height: 230px;
+		margin: 0;
+		margin-right: 0;
+		padding-right: 10px;
+		width: 32%;
+
+		&:nth-child(4n+0) {
+			margin-left:0;
+		}
+		&:nth-child(3n+0) {
+			margin-right: 0;
+		}
+	}
+  }
+}
+@media screen and (max-width:768px) {
+	.page-template-kontakt-oss, .page-template-contact-us {
+		.threecolumn {
+			min-height: 230px;
+			margin: 0;
+			margin-right: 0;
+			padding-right: 15px;
+			width: 49%;
+
+			&:nth-child(4n+0) {
+				margin-left:0;
+			}
+			&:nth-child(3n+0) {
+				margin-right: 0;
+			}
+		}
+	}
+}
+@media screen and (max-width:480px) {
+	.page-template-kontakt-oss, .page-template-contact-us {
+    .wp-ansatte {
+    	padding-left:10px;
+    	padding-right:10px;
+
+    	section.pressebilder {
+    		padding-left: 0!important;
+    		padding-right: 0!important;
+    	}
+    }
+  }
+	.page-template-kontakt-oss, .page-template-contact-us {
+		.threecolumn {
+			width: 100%;
+		}
+		#map-canvas {
+			width:100%;
+			height:285px;
+			margin:0px;
+			padding:0px;
+		}
+		.white_button {
+		    display: inline-block;
+		    margin: 10px 0;
+		    min-height: 50px;
+		    width: 98%;
+		    box-sizing: content-box;
+		    text-decoration: none;
+		    text-align: center;
+		    border: 3px solid black;
+		}
+		span.blue_button {
+		    margin: 0;
+		    width: 100%;
+		    margin-bottom: 20px;
+
+			a {
+				color: $white;
+				line-height: 50px;
+				padding: 3px 0;
+				display: block;
+			}
+		}
+		.infoboks {
+
+			.left-col {
+			    width: 98%;
+			    display: block;
+			    float: left;
+			}
+			.right-col {
+				width: 98%;
+				display: block;
+				float: left;
+				&::after {
+					clear: both;
+				}
+			}
+		}
+		.pressebilder .image-no-info {
+			width: 100%;
+			margin-right: 0;
+		}
+	}
+}

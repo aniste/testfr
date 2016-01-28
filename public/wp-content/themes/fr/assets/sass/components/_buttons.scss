@@ -1,0 +1,301 @@
+.green_button_white {
+	min-height: 150px;
+	width: 100%;
+	background-color: $green-60;
+	display: table;
+	color: $black-100;
+	text-align: center;
+	padding-top: 10px;
+}
+span.blue_button {
+	display: inline-block;
+    // margin: 0.47%;
+    min-height: 50px;
+    max-height: 50px;
+    // width: 15.5%;
+    box-sizing: border-box;
+	background-color: $blue-dark-100;
+	text-decoration: none;
+	text-align: center;
+
+	&:hover {
+		background-color: $blue-dark-60;
+	}
+
+	&:first-child {
+			margin-left: 0;
+		}
+	&:last-child {
+		margin-right: 0;
+	}
+
+	a {
+		color: $white;
+		// line-height: 50px;
+		padding: 15px;
+		display: block;
+		text-decoration: none;
+	}
+}
+span.green_button {
+
+	.white-line {
+		background-color: $white;
+		height: 4px;
+		width: 50px;
+		position: absolute;
+		display: block;
+		bottom: 40px;
+		left: 43%;
+	}
+
+	display: inline-block;
+	position: relative;
+	padding: 0 15px;
+    min-height: 150px;
+    width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    background-color: $green-40;
+    vertical-align: middle;
+
+	a {
+    	color: black;
+	    padding: 20% 0;
+	    display: block;
+	    font-size: 26px;
+	    font-weight: normal;
+	    text-transform: uppercase;
+	    text-decoration: none;
+	}
+	&:hover {
+		background-color: $green-20;
+	}
+}
+
+.black_button {
+		// max-width: 160px;
+		display: inline-block;
+		a {
+			min-height: 50px;
+			max-height: 50px;
+			// width: 160px;
+			line-height: 50px;
+			margin: 10px 0;
+			background-color: #000000;
+			display: block;
+			// font-size: 11pt;
+			text-decoration: none;
+			color: $white;
+			text-align: center;
+			padding: 0 14px;
+
+			&:hover {
+				background-color: $white;
+				color: $black-100;
+				border: 3px solid $black-100;
+			}
+		}
+	}
+
+span.white_button {
+	display: inline-block;
+    width: auto;
+    margin: 10px 0;
+    box-sizing: border-box;
+	background-color: $white;
+	text-decoration: none;
+	text-align: center;
+	border: 3px solid $black-100;
+	vertical-align: middle;
+	text-decoration: none;
+	font-family: 'FFClanWebMedium', sans-serif;
+
+	&:first-child {
+			margin-left: 0;
+		}
+	&:last-child {
+		margin-right: 0;
+	}
+
+	a {
+		color: $black-100!important;
+		padding: 15px;
+		display: block;
+		font-weight: normal;
+		text-decoration: none!important;
+
+		&:hover {
+			color: $white!important;
+		}
+	}
+
+	&:hover {
+		background-color: $black-100;
+		text-decoration: none;
+	}
+}
+span.white_button_oep {
+	display: inline-block;
+    width: auto;
+    margin: 0;
+    box-sizing: border-box;
+	background-color: $white;
+	text-decoration: none;
+	text-align: center;
+	border: 3px solid $black-100;
+	vertical-align: middle;
+	text-decoration: none;
+	font-family: 'FFClanWebMedium', sans-serif;
+
+	i.fa.fa-external-link {
+    	margin: 10px 0px 10px 15px;
+	}
+
+
+
+	a {
+		color: $black-100!important;
+		padding: 10px 15px;
+		display: inline-block;
+		text-decoration: none!important;
+
+		&:hover {
+			color: $white!important;
+		}
+	}
+
+	&:hover {
+		color: white;
+		background-color: $black-100;
+		text-decoration: none;
+	}
+}
+
+
+
+.white {
+	background-color: $white;
+}
+.button_content {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+
+    &::after {
+    	max-width: 50px;
+		height: 4px;
+		background-color: $green-color-mid;
+		margin: 0 auto;
+		border: none;
+		top: 3px;
+		position: relative;
+    }
+}
+.page-template-kontakt-oss {
+
+	.green_button {
+		display: inline-block;
+		a {
+	    	min-height: 150px;
+			width: 100%;
+			padding-top: 10%;
+			margin: 10px 0;
+			background-color: #A3D2B2;
+			display: block;
+			font-size: 14pt;
+			text-decoration: none;
+			color: #000;
+			text-align: center;
+		}
+	}
+
+	.black_button {
+		max-width: 160px;
+		display: inline-block;
+		a {
+			min-height: 50px;
+			max-height: 50px;
+			width: 160px;
+			line-height: 50px;
+			margin: 10px 0;
+			background-color: #000000;
+			display: block;
+			font-size: 11pt;
+			text-decoration: none;
+			color: $white;
+			text-align: center;
+		}
+	}
+	.blue_button {
+		display: inline-block;
+	    // margin: 0.47%;
+	    min-height: 50px;
+	    max-height: 50px;
+	    // width: 15.5%;
+	    box-sizing: border-box;
+		background-color: $blue-dark-100;
+		text-decoration: none;
+		text-align: center;
+
+		&:hover {
+			background-color: $blue-dark-60;
+		}
+
+		&:first-child {
+				margin-left: 0;
+			}
+		&:last-child {
+			margin-right: 0;
+		}
+
+		a {
+			color: $white;
+			// line-height: 50px;
+			padding: 15px 0;
+			display: block;
+			text-decoration: none;
+		}
+	}
+	.white_button {
+		display: inline-block;
+	    margin: 0.62%;
+	    min-height: 50px;
+	    width: 32.5%;
+	    box-sizing: border-box;
+		background-color: $white;
+		text-decoration: none;
+		text-align: center;
+		border: 3px solid $black-100;
+		vertical-align: middle;
+		font-family: 'FFClanWebMedium';
+
+
+		&:first-child {
+				margin-left: 0;
+			}
+		&:last-child {
+			margin-right: 0;
+		}
+
+		a {
+			color: $black-100;
+			padding: 15px 0;
+			display: block;
+			font-weight: normal;
+			text-decoration: none;
+
+		}
+		&:hover {
+			background-color: $black-100;
+			text-decoration: none;
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	span.white_button, span.blue_button, span.green_button {
+		width: 100%;
+	}
+}
+

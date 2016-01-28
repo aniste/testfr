@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Disallow: /feedback-form/
+Allow: /presse/$
+Disallow: /presse/*

@@ -1,0 +1,185 @@
+section.merke {
+	.merke-image {
+	    // content: "";
+	    height: auto;
+	    width: 100%;
+	    max-width: 100%;
+	    // background-color: darksalmon;
+	    display: block;
+	    margin-bottom: 20px;
+
+	}
+	.category {
+		width: 100%;
+		height: auto;
+		float: left;
+		display: block;
+	}
+	.child {
+		width: 15%;
+		max-width: 15%;
+		margin-right: 2%;
+		text-align: center;
+
+		&:nth-child(6n+0) {
+			margin-right: 0;
+		}
+
+		a {
+			color: $black-100;
+		}
+	}
+	.archive_drop {
+		border: none;
+	}
+
+}
+
+.page-template-merkeoversikten {
+	.ingressteksten {
+		margin-bottom: 40px;
+	}
+}
+
+/* ==========================================================================
+   MERKEOVERSIKT
+   ========================================================================== */
+
+.merke-item {
+  width: 12%;
+  margin-right: 4%;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+
+  	&:last-child {
+  		margin-right: 0;
+  	}
+
+  	.wp-post-image {
+  		border-radius: 0!important;
+  	}
+}
+
+.tax-header {
+  background: $profile-color;
+  color: $white;
+  padding: 10px 0 10px 10px;
+  font-size: 150%;
+}
+.post-thumbnail {
+	float: right;
+}
+
+@media screen and (max-width: 1025px) {
+	section.merke {
+		.child {
+			width: 23%;
+			max-width: 23%;
+			margin-right:2.6%;
+
+			&:nth-child(4n+0) {
+				margin-right: 0;
+			}
+		}
+		
+		.category {
+			width: 100%;
+			height: auto;
+			float: left;
+			display: block;
+		}
+
+		.archive_drop {
+			border: none;
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	section.merke {
+		.child {
+			width: 30%;
+			max-width: 30%;
+			margin-right:5%;
+
+			&:nth-child(6n+0){
+				margin-right: 0;
+			}
+			&:nth-child(4n+0) {
+				margin-right: 5%;
+			}
+			&:nth-child(3n+0) {
+				margin-right: 0;
+			}
+		}
+		
+		.category {
+			width: 100%;
+			height: auto;
+			float: left;
+			display: block;
+		}
+
+		.archive_drop {
+			border: none;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	section.merke {
+		.child {
+			width: 45%;
+			max-width: 45%;
+			margin-right:8%;
+
+			&:nth-child(2n+0) {
+				margin-right: 0;
+			}
+			&:nth-child(3n+0) {
+				margin-right: 8%;
+			}
+			&:nth-child(6n+0) {
+				margin-right: 0;
+			}
+		}
+		
+		.category {
+			width: 100%;
+			height: auto;
+			float: left;
+			display: block;
+		}
+
+		.archive_drop {
+			border: none;
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	.topheader {
+		width: 100%;
+	}
+	.merke .archive_drop {
+		margin: 0 3%;
+	}
+	section.merke .child {
+		margin-right: 0;
+		max-height: 300px;
+		max-width: 100%;
+			width: initial;
+		text-align: center;
+		display: block;
+		margin-bottom: 40px;
+
+		.merke-image {
+			margin: 0 auto;
+			width: initial;
+			margin-bottom: 20px;
+		}
+
+	}
+	.merke .category-container {
+		width: 100%;
+	}
+}

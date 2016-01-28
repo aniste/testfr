@@ -1,0 +1,290 @@
+.single-pressemelding {
+	.article-content {
+		.wp-caption {
+			display: none;
+		}
+	}
+}
+
+
+.single, 
+.single-test, 
+.single-pressemelding, 
+.single-kontrakt, 
+.page-template-single-fpa {
+	.related {
+				a {
+					text-decoration: none;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+	
+	main {
+		max-width: $pagemaxwidth;
+
+		.header {
+			max-width: $pagemaxwidth;
+			margin: 0 auto;
+		}
+
+		.parent {
+			background: none;
+		}
+		.topheader {
+			@include topheader;
+			top: 0;
+			padding-left: 0;
+		}
+		.topheader {
+			width: 100%;
+			text-align: left;
+			margin-top: 20px;
+			margin-left: 0;
+
+			p {
+				font-size: 26px;
+			}
+			h1 {
+				line-height: 1.3;
+			}
+			h3 {
+				font-family: 'FFClanWebBook', sans-serif;
+				margin-bottom: 10px;
+				p {
+					font-size: 26px;
+				}
+			}
+		} 
+		
+		.metainfo {
+			max-width: $pagemaxwidth;
+			.date {
+			    height: 40px;
+			    width: 100%;
+			    line-height: 40px;
+			    margin: 20px 0 20px 0;
+			    padding: 0 2%;
+			    display: block;
+			    color: $black-100;
+			    background-color: $blue-dark-40;
+			    font-weight: bold;
+			    font-size: 16px;
+			}
+		}
+		.parent-content {
+			margin-top: 0px;
+
+			.article-content {
+				width: 60%;
+				max-width: 60%;
+				padding-right: 4%;
+				// padding-left: 2%;
+				float: left;
+				display: block; 
+
+				.ingressteksten {
+					text-align: left!important;
+					margin-bottom: 40px;
+					padding-left: 0;
+				}
+
+				p.article-ingress {
+					font-size: 20px;
+				}
+				h1, h2 {
+					font-size: 26px;
+					font-family: 'FFClanWebMedium', sans-serif;
+
+					strong {
+						font-weight: normal;
+					}
+				}
+				h4 {
+					font-weight: bold;
+					margin-bottom: 20px;
+				}
+				.infografikk {
+					height: auto;
+			    	width: 98%;
+			    	
+			    	margin: 40px 0 50px;
+
+			    	.image {
+			    		height: 350px;
+			    		background-color: $grey-40;
+			    		color: $white;
+			    		padding: 20px 0;
+			    		text-align: center;
+			    	}
+			    	.caption {
+			    		margin: 10px 0;
+			    		font-size: 16px;
+			    	}
+				}
+				.half_infografikk {
+					height: auto;
+			    	width: 98%;
+			    	
+			    	margin: 40px 0 50px;
+
+			    	.image {
+			    		height: 270px;
+			    		background-color: $grey-40;
+			    		color: $white;
+			    		padding: 20px 0;
+			    		text-align: center;
+			    	}
+			    	.caption {
+			    		margin: 10px 0;
+			    		font-size: 16px;
+			    	}
+				}
+			}
+		}
+		
+
+		.article-column {
+			width: 30%;
+			height: auto;
+			padding-right: 2%;
+			float: right;
+			display: block;
+
+			.ansatt {
+			    width: 100%;
+			    background-color: $black-10;
+
+			    .bilde {
+
+			    	img {
+			    	}
+			    }
+			    .navn {
+			    }
+			    .navn, .stilling, .epost, .telefon, .pressebilder {
+
+			    }
+			    .stilling {
+			    	margin: 10px 15px;
+			    }
+			    .pressebilder {
+			    	text-decoration: underline;
+			    	margin: 10px;
+			    }
+			}
+			.faktaboks {
+				padding: 15px 30px 15px 15px;
+				margin: 0 0 50px 0;
+				background-color: $blue-dark-20;
+
+				h3#tittel {
+					margin: 0 0 10px 0;
+					display: inline-block;
+					width: 100%;
+				}
+			}
+			
+		}
+	}
+	.thirds-container {
+
+		max-width: $pagemaxwidth;
+		margin: auto;
+
+	}
+	
+	.thirds {
+		width: 30%;
+		height: auto;
+		display: inline-block;
+		margin-right: 4.2%;
+		vertical-align: top;
+
+		img.thirds {
+
+			width: 100%;
+			margin-bottom: 20px;
+			display: block;
+			background-color: $black-10;
+		}
+		.thirds-text {
+			 h4{font-size: 22px;}
+		}
+
+	}
+	.thirds:nth-child(3) {
+		margin-right: 0;
+	}
+}
+.single { 
+	main {
+		.topheader {
+			padding-left: 0;
+			text-align: left;
+		}
+	}
+}
+
+@media screen and (max-width: 1160px) {
+	.single { 
+		main {
+			.topheader {
+				padding-left: 20px;
+				text-align: left;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.single, .single-test, .single-pressemelding, .single-kontrakt, .page-template-single-fpa {
+		.main, main {
+			.parent-content {
+				.article-content {
+					width: 100%;
+					max-width: 100%;
+				}
+			}
+		}
+		.related {
+			.thirds-container {
+				padding: 0 20px;
+			}
+		}
+	}
+	.single, .single-test, .single-pressemelding, .single-kontrakt, .page-template-single-fpa {
+		.main, main {
+			.parent-content {
+				.article-column {
+					float: left;
+					padding-left: 0;
+				}
+			}
+		}
+	}
+	.single main .article-column,
+	.single-test main .article-column,
+	.single-pressemelding main .article-column,
+	.single-kontrakt main .article-column,
+	.page-template-single-fpa main .article-column {
+	  width: 50%;
+	  height: auto;
+	  padding-right: 0;
+	  padding-left: 0;
+	  float: right;
+	  display: block;
+	}
+}
+
+@media screen and (max-width:480px) {
+	.single {
+		.main, main {
+			.thirds {
+				width: 100%;
+			}
+		}
+	}
+}

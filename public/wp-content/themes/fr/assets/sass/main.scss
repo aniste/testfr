@@ -1,0 +1,599 @@
+/* ==========================================================================
+   MAIN
+   ========================================================================== */
+
+/* COMPASS DEFAULTS */
+@import "compass";
+@import "compass/reset";
+@import "compass/css3";
+
+/* CUSTOM RESET AND MIXINS */
+@import 'customreset';
+
+
+
+/* IMPORT PARTIALS */
+
+/* BASE */
+@import 'base/mixins';
+@import 'base/presets';
+@import 'base/colors';
+@import 'base/typography';
+@import 'base/allpages';
+
+
+/* COMPONENTS */
+@import 'components/table';
+@import 'components/shortcodes';
+@import 'components/search';
+@import 'components/buttons';
+
+
+/* LAYOUTS */
+@import 'layouts/header';
+@import 'layouts/breadcrumbs';
+@import 'layouts/megamenu';
+@import 'layouts/footer';
+
+
+/* PAGES */
+@import 'pages/frontpage';
+@import 'pages/level2';
+@import 'pages/level3';
+@import 'pages/level4';
+@import 'pages/fpa_samleside';
+@import 'pages/single-article';
+@import 'pages/single-test';
+@import 'pages/merkeoversikten';
+@import 'pages/klageguiden';
+@import 'pages/klagebrev';
+@import 'pages/kontrakter';
+@import 'pages/kontakt_oss';
+@import 'pages/fr_info';
+@import 'pages/presse';
+@import 'pages/hsvar';
+@import 'pages/page-template-kampanje_m_bilde';
+
+
+
+/* ==========================================================================
+   STRUCTURE
+   ========================================================================== */
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+
+	margin: 0 0 350px;
+}
+@media screen and (max-width: 480px) {
+	body {
+		margin: 0 0 600px;
+	}
+}
+
+
+
+/* ==========================================================================
+   TESTING
+   ========================================================================== */
+
+
+.hideme
+{
+    opacity:0;
+    cursor: default;
+    a {
+    	cursor: default;
+    }
+}
+.hide {
+	display: none;
+}
+.full {
+	width: 100%!important;
+}
+
+   /* Reset code to remove theme inherent styling for unordered lists */
+
+
+/* ==========================================================================
+   PAGES
+   ========================================================================== */
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	//margin: 1% 0 1% 1.6%;
+	margin: 0;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+/* SINGLE PAGE ARTICLE */
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col {
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+.item {
+	min-height: 200px;
+	padding: 1.6%;
+}
+
+.andre-bilder {
+	max-width: 150px;
+	height: auto;
+}
+
+.ingresstekst {
+	margin: 10px 0 15px 0;
+	font-weight: bold;
+}
+
+
+
+/* ==========================================================================
+   IMAGES
+   ========================================================================== */
+
+.wp-post-image {
+	@include border-radius(0px);
+	// @extend .mb-20;
+	height: auto;
+
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media only screen and (min-width:320px) {
+
+}
+@media only screen and (min-width:480px) {
+
+}
+@media only screen and (min-width:768px) {
+
+}
+@media only screen and (min-width:1024px) {
+
+}
+@media only screen and (min-width:1140px) {
+
+}
+@media only screen and (min-width:1280px) {
+
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+	   only screen and (min-resolution:144dpi) {
+
+}
+
+/* ==========================================================================
+   MISC
+   ========================================================================== */
+
+::selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+
+/* ==========================================================================
+   WORDPRESS CORE
+   ========================================================================== */
+
+.alignnone {
+	margin:5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+	display:block;
+	margin:5px auto 5px auto;
+}
+.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+a img.alignnone {
+	margin:5px 20px 20px 0;
+}
+a img.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.aligncenter {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.wp-caption {
+	background:#FFF;
+	border:1px solid #F0F0F0;
+	max-width:96%;
+	padding:5px 3px 10px;
+	text-align:center;
+}
+.wp-caption.alignnone {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignright {
+	margin:5px 0 20px 20px;
+}
+.wp-caption img {
+	border:0 none;
+	height:auto;
+	margin:0;
+	max-width:98.5%;
+	padding:0;
+	width:auto;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	font-size:11px;
+	line-height:17px;
+	margin:0;
+	padding:0 4px 5px;
+}
+
+/* ==========================================================================
+   PRINT
+   ========================================================================== */
+
+@media print {
+	* {
+		background:transparent !important;
+		color:#000 !important;
+		box-shadow:none !important;
+		text-shadow:none !important;
+	}
+	a,
+	a:visited {
+		text-decoration:underline;
+	}
+	a[href]:after {
+		content:none;
+
+	}
+	abbr[title]:after {
+		content:" (" attr(title) ")";
+	}
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content:"";
+	}
+	pre,blockquote {
+		border:1px solid #999;
+		page-break-inside:avoid;
+	}
+	thead {
+		display:table-header-group;
+	}
+	tr,img {
+		page-break-inside:avoid;
+	}
+	img {
+		max-width:100% !important;
+	}
+	@page {
+		margin:0.5cm;
+	}
+	h1 {
+		font-size: 30px;
+	}
+	p,
+	h2,
+	h3 {
+		orphans:3;
+		widows:3;
+	}
+	h2,
+	h3 {
+		page-break-after:avoid;
+	}
+	li.menubutton, li.search {
+		content: none;
+		display: none;
+	}
+	.parent-content {
+		text-align: left;
+	}
+	.footer {
+		display: none;
+	}
+}
+
+/* ==========================================================================
+   CUSTOM PAGES
+   ========================================================================== */
+
+#container-404 {
+  position : relative;
+  min-height : 330px;
+  padding-top : 20px;
+  width : 90%;
+  margin : 0 auto;
+
+  img {
+    position : absolute;
+    top : 0px;
+    left : 0px;
+  }
+
+  h1, h2 {
+    padding-left : 400px;
+  }
+
+  h1 {
+    font-size : 300%;
+  }
+  h2 {
+    font-size : 200%;
+  }
+  a {
+    color : #10737D;
+  }
+}
+
+@media screen and (max-width:900px) {
+  #container-404 {
+    padding-top : 10px;
+    width : 80%;
+    min-height : 160px;
+
+    img {
+      width : 30%;
+    }
+    h1, h2 {
+      padding-left : 40%;
+    }
+    h1 {
+      font-size : 200%;
+    }
+    h2 {
+      font-size : 100%;
+    }
+  }
+}
+
+@media screen and (max-width:500px) {
+  #container-404 {
+    padding-top : 0;
+    min-height : 130px;
+    width : 95%;
+
+    img {
+      width : 30%;
+    }
+    h1, h2 {
+      padding-left : 40%;
+    }
+    h1 {
+      font-size : 150%;
+    }
+    h2 {
+      font-size : 100%;
+    }
+  }
+}
+
+/* ==========================================================================
+   WORDPRESS ADMIN
+   ========================================================================== */
+
+/* Basic styling, used when JavaScript is unsupported */
+.cbb {
+	margin:1em 0;
+	padding:0 10px;
+	border:1px solid #666;
+	background:#fff;
+}
+.cbb h1 {
+	margin:0 -10px;
+	padding:0.3em 10px;
+	background:#efece6;
+	font:bold 1.2em/1 Arial, Helvetica, sans-serif;
+}
+/* Normal styling */
+.cb {margin:0.5em 0;}
+	/* Top corners and border */
+.bt {
+	height:17px;
+	margin:0 0 0 18px;
+	background:url(box.png) no-repeat 100% 0;
+}
+.bt div {
+	position:relative;
+	left:-18px;
+	width:18px;
+	height:17px;
+	background:url(box.png) no-repeat 0 0;
+	font-size:0;
+	line-height:0;
+}
+
+	/* Bottom corners and border */
+.bb {
+	height:14px;
+	margin:0 0 0 12px;
+	background:url(box.png) no-repeat 100% 100%;
+}
+.bb div {
+	position:relative;
+	left:-12px;
+	width:12px;
+	height:14px;
+	background:url(box.png) no-repeat 0 100%;
+	font-size:0;
+	line-height:0;
+}
+
+	/* Left border */
+.i1 {
+	padding:0 0 0 12px;
+	background:url(borders.png) repeat-y 0 0;
+}
+	/* Right border */
+.i2 {
+	padding:0 12px 0 0;
+	background:url(borders.png) repeat-y 100% 0;
+}
+	/* Wrapper for the content. Use it to set the background colour and insert some padding between the borders and the content. */
+.i3 {
+	display:block;
+	margin:0;
+	padding:1px 10px;
+	background:#fff;
+}
+	/* Make the content wrapper auto clearing so it will contain floats (see http://positioniseverything.net/easyclearing.html). */
+.i3:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.i3 {display:inline-block;}
+.i3 {display:block;}
+/* Default CSS ends here */
+
+/* Custom CSS
+================================================*/
+/* You can use different borders for different boxes on the same page. Just adjust the CSS. Here are a few examples, one of which uses the GIF images instead of the PNG images. Note that you can also adjust borders, heights and paddings this way. Remember to adjust the IE CSS as well. */
+
+.one {
+	position:absolute;
+	top:0;
+	right:0;
+}
+.two {
+	float:left;
+	width:45%;
+}
+.two .i1,
+.two .i2 { background-image:url(borders.gif); }
+.two .bt,
+.two .bt div,
+.two .bb,
+.two .bb div { background-image:url(box.gif); }
+#three {
+	float:left;
+	clear:both;
+	width:80%;
+}
+#three .cb {
+	float:left;
+	width:40%;
+}
+.button {
+	float:left;
+	margin-top:0;
+}
+.button .bt {
+	height:8px;
+	margin:0 0 0 9px;
+	background-image:url(button.png);
+}
+.button .bt div {
+	left:-9px;
+	width:9px;
+	height:8px;
+	background-image:url(button.png);
+}
+.button .bb {
+	height:8px;
+	margin:0 0 0 8px;
+	background-image:url(button.png);
+}
+.button .bb div {
+	left:-8px;
+	width:8px;
+	height:8px;
+	background-image:url(button.png);
+}
+.button .i1 {
+	padding:0 0 0 3px;
+	background-image:url(button-borders.png);
+}
+.button .i2 {
+	padding:0 3px 0 0;
+	background-image:url(button-borders.png);
+}
+.button .i3 {
+	padding:0 0.5em;
+	background:#3a3d40 url(button.png) no-repeat -3px -8px;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+}
+.button a:link,
+.button a:visited,
+.button a:hover {
+	border:none;
+	color:#fff;
+}

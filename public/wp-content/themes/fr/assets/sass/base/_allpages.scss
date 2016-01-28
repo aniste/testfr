@@ -1,0 +1,807 @@
+section.article-content {
+	a {
+		color: $text-underline;
+		font-weight: bold;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		padding-top: 20px;
+	}
+}
+
+
+
+.les_mer:hover {
+	text-decoration: underline;
+}
+
+.parent-content {
+	.ingressteksten {
+		max-width: 1041px;
+		padding: 0 5%;
+	}
+}
+
+.site-footer {
+	position: absolute!important;
+	left: 0!important;
+	bottom: 0!important;
+	height: 325px;
+	width: 100%;
+}
+/* wrapper */
+.wrapper {
+	min-height: 100%;
+	width:100%;
+	position:relative;
+}
+
+.main, main {
+	margin: 0 auto;
+	width: 100%;
+}
+.main-container {
+	max-width: $pagemaxwidth;
+	margin: 0 auto;
+}
+
+.header {
+	.thirds-container {
+		max-width: $pagemaxwidth;
+		margin: auto;
+		margin-bottom: 40px;
+		@include clearfix();
+
+		.thirds {
+			width: 32%;
+			display: block;
+			margin-right: 2%;
+			padding: 0;
+			vertical-align: top;
+			float: left;
+
+
+			img.thirds, .frontpage-article-image {
+				height: 200px;
+				width: 100%;
+				margin-bottom: 20px;
+				display: block;
+				background-color: $black-10;
+				overflow: hidden;
+
+				img {
+
+					max-width: 100%;
+				}
+			}
+
+			.thirds-text {
+				 h4{font-size: 22px;}
+			}
+
+		}
+		.thirds:nth-child(3) {
+			margin-right: 0;
+		}
+
+		.full {
+			width: 100%;
+			background-color: #E5ECEE;
+
+			.top {
+				min-height: 75px;
+				width: 100%;
+				padding: 15px 0 1px;
+				position: relative;
+				text-align: center;
+				background-color: #D0DDE0;
+
+				h4.list {
+					margin: 0;
+				}
+
+				.arrow-down {
+				    width: 0;
+				    height: 0;
+				    margin: auto;
+				    border-left: 20px solid transparent;
+				    border-right: 20px solid transparent;
+				    left: 0;
+				    border-top: 14px solid;
+				    position: absolute;
+				    right: 0;
+				    bottom: -14px;
+				    border-top-color: #D0DDE0;
+				}
+			}
+			ul {
+				list-style: none;
+				margin-top: 40px;
+				padding-bottom: 20px;
+				@include clearfix();
+
+				a {
+					float: left;
+					display: block;
+					width: auto;
+					margin-right: 4%;
+					margin-left: 4%;
+					text-align: center;
+
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+
+				li {
+
+				}
+			}
+		}
+	}
+}
+
+.headerimage {
+	background-color: $blue-20;
+	margin-bottom: 80px;
+	width: 100%;
+	height: 430px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	@include clearfix();
+
+	.featured {
+		position: relative;
+		z-index: 1;
+	}
+	img {
+		width: initial;
+		max-width: 100%;
+
+	}
+	.topheader {
+		top: 265px;
+
+		h1:first-letter {
+			text-transform: capitalize!important;
+		}
+	}
+}
+
+.topheader {
+	hr {
+		height: 20px;
+		width: 40px;
+		background-color: transparent;
+		background-image: url('../../img/icons/pil_n.svg');
+		background-size: 40px 20px;
+	}
+}
+
+.wp-caption {
+	border: 0!important;
+    text-align: left!important;
+    padding: 0!important;
+    margin-bottom: 15px!important;
+
+    img {
+    	width: 100%!important;
+    	max-width: 100%!important;
+    }
+}
+.wp-caption-text {
+	text-align: right;
+	margin-top: 10px!important;
+	padding: 0!important;
+}
+
+.parent {
+	.topheader {
+		margin-top: 0px;
+
+		p {
+			margin-bottom: 15px;
+		}
+		h3 {
+			margin-bottom: 10px;
+		}
+	}
+	.frontpage-nav-wrapper {
+		.topheader {
+			margin-top: 285px;
+		}
+	}
+}
+.title-container {
+	max-width: 1140px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+}
+
+
+blockquote {
+  margin: 1.5em 10px;
+
+	quotes: "\201C" "\201D" "\2018" "\2019";
+	font-size: 26px;
+	text-align: center;
+	font-family: 'FFClanWebBookItalic', sans-serif;
+}
+
+blockquote::before {
+  color: #B3B2B2;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.10em;
+  vertical-align: -0.4em;
+}
+
+blockquote::after {
+  color: #B3B2B2;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.10em;
+  vertical-align: -0.6em;
+}
+
+blockquote
+
+.date {
+    height: 38px;
+    width: 100%;
+    line-height: 40px;
+    margin: 20px 0 30px 0;
+    padding: 0 2%;
+    display: block;
+    color: black;
+    background-color: rgba(0, 73, 87, 0.4);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+img.hoi {
+	max-height: 2000px!important;
+}
+
+
+
+.list-margin {
+	margin: 10px 0 10px 20px;
+}
+
+ul {
+	list-style-type: disc;
+	@extend .list-margin;
+	li {
+		font-size: 16px;
+	}
+}
+ol {
+	list-style-type: decimal;
+	@extend .list-margin;
+	li {
+		font-size: 16px;
+	}
+}
+
+.post-featured-image img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 5px;
+}
+.post-featured-image-text {
+	text-align: right;
+}
+
+.ingress {
+	width: 80%;
+	margin-bottom: 20px;
+	margin: 0 auto;
+	text-align: center;
+
+	p {
+		text-align: center;
+		margin: 0 auto;
+		font-size: 26px;
+	}
+}
+
+.article-content img {
+	max-height: 433px;
+}
+
+.innledende p, .ingressteksten, .ingressteksten p {
+	font-size: 26px;
+	font-family: 'FFClanWebBook', sans-serif;
+}
+
+
+.ekstern::before {
+	content: url("../../img/icons/ekstern-link.svg");
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+}
+.intern::before {
+	content: url("../../img/icons/intern-link.svg");
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+}
+
+hr {
+	max-width: 50px;
+	height: 4px;
+	background-color: $green-color-mid;
+	margin: 0 auto;
+	margin-bottom: 11px;
+	border: none;
+	top: 10px;
+	position: relative;
+	text-align: left;
+}
+.faktaboks {
+	hr {
+		background-color: $blue-dark-60;
+		margin: 0 0 20px;
+		top: 0;
+	}
+}
+p.article-ingress {
+	font-size: 20px;
+}
+.collapse {
+	width: 100%;
+}
+.archive_drop {
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid black;
+
+    .innholdsfelt_skjult {
+    	width: 100%;
+    	margin-top: 20px;
+    	display: block;
+    	float: left;
+    }
+}
+.archive-header {
+	height: 50px;
+	width: 100%;
+	line-height: 50px;
+	display: block;
+	clear: both;
+	cursor: pointer;
+	h4 {
+		display: block;
+		float: left;
+		margin: 0 0 10px 0;
+	}
+}
+.child .archive-header-icon, .archive-header-icon {
+	display: block;
+	float: right;
+	height: 49px;
+	width: 49px;
+	background-image: url('http://fbr.comingsoon.no/wp-content/themes/fr/img/icons/kollaps-lukket.svg');
+
+	// :before {
+	// 	font-family: 'fontawesome';
+	// 	content: "\f067"!important;
+	// }
+}
+.child .utvidet .archive-header-icon, .archive_drop.utvidet {
+	.archive-header-icon {
+		background-image: url("http://fbr.comingsoon.no/wp-content/themes/fr/img/icons/kollaps-apen.svg");
+	}
+}
+.child {
+	.utvidet {
+		.archive-header-icon {
+			background-image: url("http://fbr.comingsoon.no/wp-content/themes/fr/img/icons/kollaps-apen.svg");
+		}
+	}
+}
+.child .archive-header-icon
+.additions {
+	margin: 40px 0;
+}
+
+.article-content {
+	width: 60%;
+	max-width: 60%;
+	margin-right: 10%;
+	// margin-left: 2%;
+	float: left;
+	display: block;
+
+	p.article-ingress {
+		font-size: 20px;
+		max-width: 100%;
+		text-align: left;
+	}
+	h4 {
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+
+	/*form labels*/
+
+	label {
+		color: black;
+		font-size: 16px;
+	}
+	.ninja-forms-help-text {
+		font-size: 16px;
+	}
+
+	.infografikk {
+		height: auto;
+    	width: 98%;
+
+    	margin: 40px 0 50px;
+
+    	.image {
+    		height: 350px;
+    		background-color: $grey-40;
+    		color: $white;
+    		padding: 20px 0;
+    		text-align: center;
+    	}
+    	.caption {
+    		margin: 10px 0;
+    		font-size: 16px;
+    	}
+	}
+	.half_infografikk {
+		height: auto;
+    	width: 98%;
+
+    	margin: 40px 0 50px;
+
+    	.image {
+    		height: 270px;
+    		background-color: $grey-40;
+    		color: $white;
+    		padding: 20px 0;
+    		text-align: center;
+    	}
+    	.caption {
+    		margin: 10px 0;
+    		font-size: 16px;
+    	}
+	}
+	.archive-header {
+		font-weight: bold;
+	}
+}
+
+.article-column {
+	width: 30%;
+	margin-right: 0%;
+	float: left;
+	display: block;
+
+	.ansatt {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    background-color: $white;
+    font-size: 16px;
+    margin: 0 2% 50px 0;
+    padding-bottom: 50px;
+    vertical-align: top;
+
+	    &:nth-of-type(3n+0) {
+	    	margin-right: 0;
+	    }
+
+	    .bilde {
+	    	height: auto;
+	    	max-height: 200px;
+	    	display: block;
+	    	margin-bottom: 10px;
+	    	overflow: hidden;
+
+	    	img {
+	    		width: 100%;
+	    	}
+	    }
+	    .navn {
+	    	font-size: 16px;
+	    	font-weight: bold;
+	    }
+	    .navn, .stilling, .epost, .telefon, .pressebilder {
+	    	margin-left: 15px;
+	    	margin-right: 15px;
+	    	line-height: 1.5;
+	    }
+	    .stilling {
+	    	margin: 10px 15px;
+	    }
+	    .pressebilder {
+	    	text-decoration: underline;
+	    	margin: 10px;
+	    }
+	}
+	.faktaboks {
+		padding: 15px 30px 15px 15px;
+		margin: 0 0 50px 0;
+		background-color: $blue-dark-20;
+
+		h3#tittel {
+			margin: 0 0 30px 0;
+			display: inline-block;
+			width: 100%;
+		}
+
+	}
+
+}
+
+.related {
+	padding: 0;
+	.head-container {
+		width: 100%;
+		background-color: $blue-dark-40;
+	}
+	h3.head {
+		margin: 0 auto;
+	    max-width: $pagemaxwidth;
+	    margin-bottom: 40px;
+	    padding-top: 20px;
+	    padding-bottom: 15px;
+	    padding-left: 0;
+	    font-family: 'FFClanWebMedium';
+	}
+	.text {
+		margin-bottom: 10px;
+	}
+}
+
+/* Collapse accordian with sub accordian */
+
+.dropdown {
+	width: 100%;
+	@include clearfix();
+
+
+	.dropdown-header {
+		padding: 10px 0;
+		cursor: pointer;
+		border-bottom: 1px solid $black-100;
+
+		h3 {
+			margin: 0;
+			padding: 0;
+		}
+		h4 {
+			margin: 5px 0;
+			padding: 0;
+		}
+
+		.mainheader-icon {
+		    display: block;
+		    float: right;
+		    height: 40px;
+		    width: 40px;
+		    background-image: url("http://fbr.comingsoon.no/wp-content/themes/fr/img/icons/kollaps-lukket.svg");
+		}
+
+	}
+
+	.utvidet {
+
+			.mainheader-icon {
+				background-image: url("http://fbr.comingsoon.no/wp-content/themes/fr/img/icons/kollaps-apen.svg");
+			}
+
+	}
+
+	.dropdown-collapse {
+		width: 100%;
+		margin-bottom: 80px;
+		float: left;
+
+		.dropdown-child-excerpt {
+			float: left;
+			width: 100%;
+			padding-top: 40px;
+		}
+
+		.subchild {
+			width: 100%;
+			padding: 20px 0px 0;
+
+			.subheader {
+				cursor: pointer;
+				border-bottom: 1px solid $black-100;
+			}
+
+			.subcontent {
+				padding: 25px 0px 20px;
+			}
+
+			.subheader-icon {
+			    display: block;
+			    float: right;
+			    height: 40px;
+			    width: 40px;
+			    background-image: url("http://fbr.comingsoon.no/wp-content/themes/fr/img/icons/kollaps-lukket.svg");
+			}
+			.utvidet {
+				border-bottom: none!important;
+
+				.subheader-icon {
+					background-image: url("http://fbr.comingsoon.no/wp-content/themes/fr/img/icons/kollaps-apen.svg");
+				}
+			}
+		}
+	}
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1160px){
+	.p-0-20 {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	.parent-content {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.related {
+		h3.head {
+			padding-left: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 1025px){
+	/* issue163874 */
+	.headerimage {
+	    display : none;
+	}
+	.parent .frontpage-nav-wrapper .topheader {
+	   margin-top : 15px;
+	}
+	.ingressteksten {
+		br {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	.headerimage {
+		height: 350px!important;
+	}
+	.topheader {
+		width: 100%;
+	}
+	.related {
+		h3.head {
+			padding-left: 20px;
+		}
+		.text {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+
+	.main, main {
+		section {
+			width: 100%;
+			padding-right: 10px;
+			padding-left: 10px;
+
+		}
+		.parent {
+			h1 {
+				font-size: 30pt;
+				word-break: break-word;
+			}
+			h3 {
+				font-size: 12pt;
+			}
+		}
+	}
+
+	.topheader h1 {
+		font-size: 35px!important;
+	}
+	.topheader h3 p {
+		font-size: 26px!important;
+	}
+
+
+
+	/* Generelle artikler */
+	.main .parent, main .parent {
+		.parent-content {
+			margin-bottom: 0;
+		}
+	}
+
+	.headerimage {
+		height: 280px!important;
+	}
+
+	.headerimage .topheader {
+    	top: 200px;
+	}
+
+	section.article-content {
+		width: 100%;
+		max-width: 100%;
+
+	}
+
+	section.article-coloumn, .article-column {
+		width: 100%!important;
+		max-width: 100%;
+	}
+
+	.related {
+		h3.head {
+		    padding-left: 20px;
+		}
+	}
+
+	.child {
+			.child-content {
+			.l-col, .r-col {
+				width: 100%!important;
+				max-width: 100%!important;
+			}
+		}
+	}
+
+
+	.single {
+		.main, main {
+			.article-content, .article-column {
+				margin-right: 0!important;
+			}
+			.thirds {
+				margin: 0;
+			}
+		}
+	}
+	.single .thirds img.thirds,
+	.single-test .thirds img.thirds,
+	.single-pressemelding .thirds img.thirds,
+	.single-kontrakt .thirds img.thirds,
+	.page-template-single-fpa .thirds img.thirds {
+		height: initial!important;
+	}
+	// .related {
+	// 	.main {
+	// 		padding: 20px 10px;
+	// 	}
+	// }
+}
+
+.no-top-margin {
+  margin-top : 0;
+}
+

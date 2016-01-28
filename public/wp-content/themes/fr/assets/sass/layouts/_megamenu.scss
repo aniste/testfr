@@ -1,0 +1,557 @@
+.optional_container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+#menu {
+    width: 100%;
+    height : 80px;
+    padding: 0;
+    list-style: none;
+    z-index: 999;
+    margin : 0;
+    padding : 0;
+    margin-top : 20px;
+
+	.btn-lol {
+        display: inline-block;
+        line-height: 75px;
+
+        i {
+            font-size: 22px;
+            vertical-align: -2px;
+        }
+	}
+
+	.arrow-up {
+	    width: 0;
+	    height: 0;
+	    border-left: 15px solid transparent;
+	    border-right: 15px solid transparent;
+	    border-bottom: 15px solid #f3f3f3;
+	    right: -47%;
+	    position: relative;
+	    top: -15px;
+	    max-width: 1140px;
+	    margin: 0 auto;
+	}
+
+	.arrow-down {
+	    width: 0;
+	    height: 0;
+	    margin: auto;
+	    border-left: 20px solid transparent;
+	    border-right: 20px solid transparent;
+	    left: 0;
+	    border-top: 14px solid;
+	    position: absolute;
+	    right: 0;
+	    bottom: -14px;
+	    border-top-color: $orange-40;
+	}
+}
+
+#menu li {
+    float: left;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+#menu li a {
+    display: block;
+    outline: 0;
+    text-decoration: none;
+}
+
+#menu li:hover a {
+  display: block;
+  text-decoration: none!important;
+
+}
+
+#menu li a:hover {
+	text-decoration: none!important;
+}
+
+#menu .dropdown-container {
+	max-width: 1140px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+#menu li.menulogo {
+	padding-left:0;
+}
+
+#menu li.search {
+	margin-right: 40px;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+#menu .search-container {
+    display: block;
+    position: relative;
+    margin-top : 20px;
+}
+
+#menu .search-container a {
+    display: block;
+    position: absolute;
+    height: 20px;
+    top : 50% !important;
+    right: 10px;
+    margin-top : -11px;
+
+    &:hover {
+    	text-decoration: none;
+    }
+
+    img {
+    	width: 18px;
+        height: auto;
+        float: right;
+    }
+}
+
+#menu .search-container input {
+    width: 100%;
+    padding: 12px 10px 8px;
+    display: block;
+    background-color: rgba(56, 206, 213, 0.2);
+    border: 0;
+    color: black;
+    font-size: 14px;
+    right: 0;
+    font-family: inherit;
+}
+
+::-webkit-input-placeholder {
+	   color: $black-100;
+
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   color: $black-100;
+
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: $black-100;
+
+	}
+
+	:-ms-input-placeholder {
+	   color: $black-100;
+
+	}
+
+#menu li .drop {
+  /*
+  line-height: 80px;
+  padding-top: 3px;
+  */
+}
+
+#menu li:hover .drop {
+  /*
+  line-height: 80px;
+  */
+
+}
+/* Drop Down */
+
+.dropdown_1column,
+.dropdown_2columns,
+.dropdown_3columns,
+.dropdown_4columns,
+.dropdown_5columns {
+  margin: 0;
+  position: absolute;
+  z-index: 999;
+  top: -999em;
+  /* Hides the drop down */
+
+  text-align: left;
+  line-height: 1.5;
+  padding: 0;
+  background: #564F49;
+  left: 0;
+  right: 0;
+}
+
+.dropdown_1column {
+  width: 100%;
+}
+/* normally 100% */
+
+.dropdown_2columns {
+  width: 100%;
+}
+/* normally 100% */
+
+.dropdown_3columns {
+  width: 100%;
+}
+/* normally 100% */
+
+.dropdown_4columns {
+  width: 100%;
+  background-color: #f3f3f3;
+}
+/* normally 100% */
+
+.dropdown_5columns {
+  width: 100%;
+}
+/* normally 100% */
+
+#menu li:hover .dropdown_1column,
+#menu li:hover .dropdown_2columns,
+#menu li:hover .dropdown_3columns,
+// #menu li:hover .dropdown_4columns,
+#menu li:hover .dropdown_5columns,
+#menu li .clicked {
+  left: 0;
+  right: 0;
+  top: auto;
+}
+
+/* Columns */
+
+.col_1,
+.col_2,
+.col_3,
+.col_4,
+.col_5 {
+  display: inline;
+  float: left;
+  position: relative;
+  padding-top: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+
+	  li {
+
+	  	a:hover {
+	  		text-decoration: underline!important;
+	  	}
+	  }
+}
+
+.col_1 {
+  width: 96%;
+}
+
+.col_2 {
+  width: 46%;
+}
+
+.col_3 {
+  width: 29%;
+}
+
+.col_4 {
+  width: 21%;
+}
+
+.col_5 {
+  width: 16%;
+}
+/* Right alignment */
+
+#menu .menu_right {
+  float: right;
+  margin-right: 0px;
+}
+
+
+// #menu li:hover .align_right,
+#menu li.clicked .align_right  {
+  top: auto;
+}
+
+
+
+#menu li.menulogo {
+		width: 54%;
+		height: 70px;
+    margin-top : 10px;
+
+		.logo {
+			width: inherit;
+            margin-top: -4px;
+		}
+}
+
+#menu li.searchbutton {
+  margin-right : 20px;
+  display : none;
+}
+#menu li.searchbutton,
+#menu li.menubutton {
+	height: 80px;
+    margin-top: 2px;
+	float: right;
+}
+
+#menu-text {
+	display: inline-block;
+}
+
+#menu li.search {
+	width: 30%;
+	margin-right: 0;
+	float: left;
+}
+
+/* Drop Down Content Stylings */
+
+#menu p,
+#menu h2,
+#menu h3,
+#menu ul li {
+  text-align: left;
+}
+
+#menu h2 {
+  margin: 7px 0 14px 0;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #666666;
+}
+
+#menu h3 {
+  margin: 7px 0 14px 0;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #888888;
+}
+
+#menu h4 {
+	width: 100%;
+    margin: 0 0 20px 0;
+    padding: 0 0 5px 0;
+    display: block;
+    float: left;
+    border-bottom-color: #38ced5;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+#menu p {
+  margin: 0 0 10px 0;
+}
+
+#menu li:hover div a {
+  text-decoration: none;
+}
+
+#menu li:hover div a:hover {
+  text-decoration: underline;
+}
+
+
+#menu li ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px 0;
+}
+
+#menu li ul li {
+  position: relative;
+  padding: 0;
+  margin: 10px 0;
+  float: none;
+  text-align: left;
+}
+
+#menu li ul li:hover {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: underline;
+}
+
+#menu li .blank ul li a {
+	font-size: 0;
+	background-color: red;
+}
+#menu li .blank h4 {
+	border-bottom-width: 0;
+}
+
+@media screen and (max-width: 1200px) {
+
+    #menu {
+        li.menulogo {
+            width: 45%;
+
+            .logo {
+                width: 100%;
+            }
+        }
+
+        li.search {
+            width: 30%;
+            margin-right: 0;
+            padding: 0;
+            float: left;
+        }
+
+        li.menubutton {
+            width: 16%;
+            height: 80px;
+            padding: 0;
+            float: right;
+        }
+    }
+
+    .arrow-up {
+        right: -42% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+	h4 {
+		font-size: 3vw;
+	}
+	.col_1 {
+		display: none;
+	}
+	.col_4 {
+		width: 45%;
+		min-height: 290px;
+	}
+	.blank {
+		display: none;
+	}
+	.dropdown-container {
+		.desktop {
+			display: none;
+		}
+	}
+
+    #menu li.search {
+        width: 37%;
+    }
+
+	#menu-text {
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+  body.search-results {
+    #menu {
+        li.search {
+          display : block;
+          position : absolute;
+          top : 120px;
+          right : 3%;
+          left : 3%;
+          width : 94%;
+        }
+    }
+  }
+
+    #menu {
+        li.searchbutton {
+          display : block;
+        }
+
+        li.menulogo {
+            width: auto;
+
+            .logo {
+                left: 5%;
+            }
+        }
+
+        li.search {
+          display : none;
+          /*
+            width: 90%;
+            margin: auto;
+            float: none;
+            position: absolute;
+                top: 130px;
+                left: 0;
+                right: 0;
+            z-index: 1;
+
+            .search-container {
+                a {
+                    top: -25px !important;
+                }
+
+                input {
+                    font-size: 16px;
+                }
+            }
+
+            #oss-keyword {
+                padding: 14px 12px;
+            }
+            */
+        }
+
+        li.menubutton {
+            width: auto;
+            margin-right: 5%;
+
+            #menu-text {
+                display: none;
+            }
+
+            .btn-lol i {
+                font-size: 30px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .arrow-up {
+        right: -42.4% !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    #menu li.menulogo {
+        width: 200px;
+        margin-top : 20px;
+    }
+
+	h4 {
+		font-size: 4vw;
+	}
+
+	.col_1 {
+		display: none;
+	}
+
+	.col_4 {
+		width: 100%;
+		min-height: inherit;
+    margin-left: 0;
+    margin-right: 0;
+		padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+	}
+
+	.blank {
+		display: none;
+	}
+
+	.dropdown-container {
+		.desktop {
+			display: none;
+		}
+	}
+}

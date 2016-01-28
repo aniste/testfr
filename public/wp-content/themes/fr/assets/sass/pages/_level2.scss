@@ -1,0 +1,577 @@
+
+.page-template-prior-after article {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+
+.page-template-prior-after .l-col {
+	max-width: 48%;
+	width: 48%;
+	display: inline-block;
+	clear: left;
+	float: left;
+    .l-col-content {
+    	max-width: 90%;
+    	width: 90%;
+    	padding: 0 10%;
+    	float: right;
+    }
+}
+
+.page-template-prior-after .r-col {
+	max-width: 46%;
+	width: 46%;
+	float: right;
+	display: block;
+    box-sizing: border-box;
+    margin: 0 2% 10px 0;
+    .r-col-content {
+    	max-width: 90%;
+    	width: 90%;
+    	padding: 0 10%;
+    }
+}
+
+.l-col::after {
+	border-right: 10px solid #ffffff;
+}
+.page-template-prior-after .core-page {
+	width: 100%;
+	max-width: 100%;
+	height: 350px;
+	padding: 25px 0;
+	background-color: #D9E4E6;
+	overflow: hidden;
+}
+.page-template-prior-after .core-page-content {
+	margin-top: 0;
+}
+.page-template-prior-after .divider {
+  height: 950px;
+  width: 20px;
+  margin-top: -25px;
+  display: inline-block;
+  background-color: #ffffff;
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.page-template-core-page-level2, .page-template-core-page-level2-andre-tema {
+
+
+
+	.topper {
+    	border-bottom: 0px solid rgba(204, 204, 204, 0.3);
+    	padding-bottom: 0;
+	}
+	.breader {
+		padding-top: 20px;
+	}
+.innledende p {
+	text-align: center;
+}
+	section.kjerneside-l-2 {
+		margin: 0 0 70px 0;
+		.child:first-of-type {
+		}
+		.child-container {
+			:last-child {
+				margin-right: 0;
+			}
+		}
+		.child {
+			width: 31%;
+			position: relative;
+			height: 340px;
+			display: inline-block;
+			margin-left: 1.5%;
+			margin-bottom: 18px;
+			box-sizing: border-box;
+			text-align: center;
+			vertical-align: top;
+			background-color: $green-40;
+			&:hover {
+				background-color: $green-20;
+			}
+
+			a {
+				height: 100%;
+				color: inherit;
+				display: block;
+				padding: 80px 30px 30px;
+			}
+
+			h2, h3 {
+			    text-transform: uppercase;
+			    font-family: 'FFClanWebBook';
+			    margin-bottom: 10px;
+			    line-height: 1.3;
+			    position: absolute;
+			    width: 100%;
+			    left: 0%;
+			    padding: 0 20px;
+			}
+			hr.short-hr {
+				  background-color: white;
+				  margin-top: 10px;
+				  margin-bottom: 30px;
+
+			}
+
+		}
+	}
+}
+
+.page-template-core-page-level2-andre-tema, .page-template-core-page-level2 {
+
+	span.white_button {
+		min-width: 250px;
+	}
+		
+	section.kjerneside-l-2 {
+		margin: 0 0 40px 0;
+	    padding-bottom: 20px;
+
+		.child:first-of-type {
+
+		}
+
+		.date {
+			text-transform: uppercase;
+			height: 38px;
+			width: 100%;
+			line-height: 40px;
+			margin: 20px 0 30px;
+			padding: 0 20px;
+			display: block;
+			color: #000;
+			background-color: #99B6BC;
+
+			p {
+				font-family: 'FFClanWebMedium', sans-serif;
+			}
+		}
+
+		.child {
+			position: relative;
+			width: calc(100%/3.2);
+			height: 260px;
+			display: inline-block;
+			margin-right: calc(100%/40);
+			margin-left: 0;
+			margin-bottom: 2.8%;
+			box-sizing: border-box;
+			text-align: center;
+			vertical-align: top;
+			background-color: $green-40;
+
+			&:hover {
+				background-color: $green-20;
+			}
+			
+
+			a {
+				height: 100%;
+				color: inherit;
+				display: block;
+				padding: 40px 30px 30px;
+			}
+
+			h2 {
+				text-transform: uppercase;
+				font-size: 26px;
+			}
+
+			hr.short-hr {
+				  background-color: white;
+				  margin-top: 25%;
+			}
+		}
+		.child:nth-of-type(3n+0){
+			margin-right: 0;
+		}
+	}
+}
+
+
+	.parent {
+		background: transparent;
+		margin-bottom: 20px;
+		@include clearfix();
+	}
+	hr {
+		max-width: 50px;
+		height: 4px;
+		background-color: $green-color-mid;
+		margin: 0 auto;
+		border: none;
+		top: 4px;
+	}
+	section {
+		width: $pagewidth;
+		max-width: $pagemaxwidth;
+		margin: 0 auto;
+		margin-top: 40px;
+		position: relative;
+	}
+	section.fly {
+		margin-top: 0;
+	}
+	.topheader {
+		@include topheader;
+		margin-top: 270px;
+		@include clearfix();
+	}
+	.parent-content {
+		width: $pagewidth;
+		max-width: $pagemaxwidth;
+		margin: 0 auto;
+		margin-bottom: 40px;
+
+		.ingressteksten {
+			
+			margin: 0 auto;
+			text-align: center;
+		}
+		.ingresscenter {
+			max-width: 740px;
+		}
+	}
+
+.answr {
+	background-color: $orange-60;
+}
+.chk {
+	background-color: $green-40;
+}
+.spm {
+	background-color: $blue-40;
+}
+.klgbrv {
+	background-color: $grey-40;
+
+	.child-content {
+		padding: 50px 25px 10px;
+	}
+}
+
+
+
+.child {
+	max-width: 100%;
+	display: inline-block;
+	margin-right: 0;
+	margin-bottom: 10px;
+	vertical-align: top;
+	
+	.felt, .status_collapse {
+		display: none;
+	}
+
+	.klagebrev_container {
+		display: inline-block;
+		height: 50px;
+		width: 30%;
+		margin: 10px 11px;
+		background-color: #E1B9DE;
+		text-align: center;
+
+		a {
+			  	display: inline-block;
+  				height: 50px;
+  				vertical-align: middle;
+  				color: #000000;
+		}
+	}
+	.relaterte_sider {
+		height: 50px;
+		width: 150px;
+	  	display: inline-block;
+	  	margin: 5px;
+	  	text-align: center;
+	  	vertical-align: middle;
+	  	background-color: #000000;
+	  	position: relative;
+	  	left: 5px;
+
+	  a {
+	  	display: block;
+	  }
+
+	}
+
+	
+	a {
+		color: #ffffff;
+		text-decoration: none;
+	}
+	.child-header {
+		padding: 15px 25px 14px;
+
+	}
+	
+	.toggle {
+		background-color: #EDF7F8;
+		padding: 5px 0 25px;
+	}
+	.child-content {
+		padding: 40px 25px 0px;
+
+		.l-col {
+			max-width: 25%;
+			width: 25%;
+			margin-right: 30px;
+			display: inline-block;
+			vertical-align: top;
+			h4 {
+
+			}
+		}
+		.r-col {
+			max-width: 60%;
+			width: 60%;
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+	.child-content:last-child {
+		padding: 40px 25px 30px 25px;
+	}
+
+.page-template-core-page-level2-andre-tema {
+	.child-excerpt {
+		height: auto;
+	    width: 100%;
+	    padding: 0 50px;
+	    position: absolute;
+	    left: 0;
+	    margin-top: 5px;
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.page-template-core-page-level2 {
+	.child-excerpt {
+		height: auto;
+	    width: 100%;
+	    padding: 0 50px;
+	    position: relative;
+	    left: 0;
+	    margin-top: 5px;
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+	.child-excerpt:first-child {
+		padding-top: 0;
+	}
+	.l-relates {
+		max-width: 25%;
+		width: 25%;
+		margin-right: 30px;
+		margin-left: 30px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.r-relates {
+		max-width: 64%;
+		width: 64%;
+		margin-left: 5px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	a.main-link {
+	  	height: 50px;
+		width: 150px;
+	  	display: inline-block;
+	  	margin: 5px;
+	  	text-align: center;
+	  	vertical-align: middle;
+	  	background-color: #000000;
+	  	position: relative;
+	  	left: 5px;
+	  }
+}
+.read-more-button {
+  		display: inline-block;
+}
+
+
+@media screen and (max-width: 1025px) {
+
+	h3 {
+		font-size: 130%!important;
+	}
+	
+	.page-template-core-page-level2, .page-template-core-page-level2-andre-tema {
+		.innledende p {
+			text-align: center;
+		}
+		.topheader {
+			width: 70%;
+		}
+		.ingressteksten {
+			width: 85%;
+		}
+		section.kjerneside-l-2 {
+
+			h2 {
+				font-size: 130%!important;
+			}
+
+			margin: 0 0 70px 0;
+			
+			.child {
+				    position: relative;
+				    width: 48%;
+				    height: 260px;
+				    display: inline-block;
+				    // margin-left: 2%;
+				    // margin-right: 3%;
+				    margin-bottom: 2.8%;
+				    box-sizing: border-box;
+				    text-align: center;
+				    vertical-align: top;
+				    background-color: rgba(0, 150, 94, 0.4);
+				
+				    &:nth-child(odd) {
+				    	margin-right: 3%;
+				    }
+
+				    &:nth-child(even) {
+				    	margin-right: 0;
+				    }
+
+				a {
+					height: 100%;
+					color: inherit;
+					display: block;
+					padding: 40px 30px 30px;
+				}
+
+				h2 {
+					text-transform: uppercase;
+					-ms-word-break: break-all;
+				     word-break: break-all;
+
+				     // Non standard for webkit
+				     word-break: break-word;
+
+				-webkit-hyphens: auto;
+				   -moz-hyphens: auto;
+				        hyphens: auto;
+				}
+				hr.short-hr {
+					  background-color: white;
+					  margin-top: 20%;
+					  
+					  margin-right: auto;
+				}
+			}
+			// .child-container {
+			// 	:nth-child(2n+0) {
+			// 		margin-right: 0;
+			// 	}
+			// 	:nth-child(3n+0) {
+			// 		margin-right: 0;
+			// 	}
+			// }
+		}
+	}
+	// .page-template-core-page-level2-andre-tema section.kjerneside-l-2 .child:nth-of-type(3n+0), .page-template-core-page-level2 section.kjerneside-l-2 .child:nth-of-type(3n+0) {
+	//     margin-right: 3%;
+	// }
+
+	main {
+		.parent {
+
+			h1 {
+				font-size: 35pt;
+			}
+
+			h3 {
+				font-size: 16pt;
+			}
+
+		}
+
+	}
+	.child {
+		display: inline-block;
+		margin-right: 0;
+		margin-bottom: 10px;
+		vertical-align: top;
+
+			.child-header-icon {
+				margin-top: 0;
+			}
+	}
+}
+
+@media screen and (max-width: 600px){
+	.page-template-core-page-level2 section.kjerneside-l-2 .child, 
+	.page-template-core-page-level2-andre-tema section.kjerneside-l-2 .child{
+	    width: 100%;
+	    height: auto;
+	    display: inline-block;
+	    margin-left: 0;
+	    margin-bottom: 18px;
+	    box-sizing: border-box;
+	    text-align: center;
+	    vertical-align: top;
+
+	    &:nth-child(even) {
+	    	margin-left: 0;
+	    }
+	}
+}
+
+@media screen and (max-width: 480px){
+	.page-template-core-page-level2 section.kjerneside-l-2 .child, 
+	.page-template-core-page-level2-andre-tema section.kjerneside-l-2 .child{
+	    width: 100%;
+	    height: auto;
+	    display: inline-block;
+	    margin-left: 0;
+	    margin-bottom: 18px;
+	    box-sizing: border-box;
+	    text-align: center;
+	    vertical-align: top;
+	}
+
+	.page-template-core-page-level2, .page-template-core-page-level2-andre-tema {
+		
+		.topheader {
+			width: 100%;
+		}
+		.ingressteksten {
+			width: 95%;
+		}
+
+		.child .child-content .l-col, .child .child-content .r-col {
+		    width: 100%;
+		    max-width: 100%;
+		  }
+	}
+	
+	.child {
+		  display: inline-block;
+		  margin-right: 0;
+		  margin-bottom: 10px;
+		  vertical-align: top;
+
+		  .child-header-icon {
+		  	max-height: 40px!important;
+		  	margin-top: 0;
+		  }
+	}
+}
+
+

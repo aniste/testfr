@@ -1,0 +1,37 @@
+/* ==========================================================================
+   STRUCTURE PRESETS
+   ========================================================================== */
+$pagewidth: 100%;
+$pagemaxwidth: 1140px;
+
+/* PRESETS */
+
+.green-blue-gradient {
+	background: #0e4858;
+	background: -moz-linear-gradient(left, #0e4858, #0c707d 100%);
+	background: -webkit-gradient(linear, left top, right top, from(#0e4858), to(#0c707d));
+	background: -webkit-linear-gradient(left, #0e4858, #0c707d);
+	background: -o-linear-gradient(left, #0e4858, #0c707d);
+	background: -ms-linear-gradient(left, #0e4858, #0c707d);
+	background: linear-gradient(left, #0e4858, #0c707d);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e4858', endColorstr='#0c707d', GradientType=1);
+}
+
+$white: #FFFFFF;
+
+$green-color-mid: #A3D2B2;
+
+.mb-20 {margin-bottom: 20px;}
+
+$profile-color:#0e4858;
+
+$fast-transition: 0.3s;
+$medium-transition: 0.7s;
+$slow-transition: 1s;
+
+.standard-transition {
+	-webkit-transition: all $fast-transition ease-in-out;
+	-moz-transition: all $fast-transition ease-in-out;
+  	-o-transition: all $fast-transition ease-in-out;
+  	transition: all $fast-transition ease-in-out;
+}

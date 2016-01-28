@@ -1,0 +1,267 @@
+section.pressekontakter {
+	max-width: 100%;
+	padding-top: 40px;
+	background-color: #F5F5F5;
+	.pressekontakter-container {
+		max-width: $pagemaxwidth;
+		margin: 0 auto;
+	}
+
+	h3 {
+		margin-bottom: 35px;
+	}
+	.ansatt {
+    width: 32%;
+    height: auto;
+    display: inline-block;
+    background-color: $white;
+    font-size: 16px;
+    margin: 0 2% 50px 0;
+    padding-bottom: 50px;
+    vertical-align: top;
+
+	    &:nth-of-type(3n+0) {
+	    	margin-right: 0;
+	    }
+
+	    .bilde {
+	    	height: auto;
+	    	max-height: 200px;
+	    	display: block;
+	    	margin-bottom: 10px;
+	    	overflow: hidden;
+
+	    	img {
+	    		width: 100%;
+	    	}
+	    }
+	    .navn {
+	    	font-size: 16px;
+	    	font-family: 'FFClanWebMedium';
+	    }
+	    .navn, .stilling, .epost, .telefon, .pressebilder {
+	    	margin-left: 15px;
+	    	line-height: 1.5;
+	    }
+	    .stilling {
+	    	margin: 10px 15px;
+	    }
+	    .pressebilder {
+	    	text-decoration: underline;
+	    	margin: 10px;
+	    }
+	}
+}
+.ansatt-pressebilder {
+	margin: 0 0 40px 0;
+}
+.image-w-info {
+	width: 32%;
+	min-height: 210px;
+	margin: 10px 2% 10px 0;
+	float: left;
+
+
+	&:nth-of-type(3n+0) {
+		margin-right: 0;
+	}
+
+	.images {
+		width: 100%;
+
+		.image {
+			margin-bottom: 10px;
+		}
+	}
+
+	.bildeinformasjon {
+
+	}
+}
+
+
+.pressemeldinger, section.arkivpressemelding {
+
+	.year {
+		width: 100%;
+		height: auto;
+		float: left;
+
+	}
+	.child{
+			width: 49%;
+			max-width: 49%;
+			min-height: 260px;
+			height: auto;
+			display: block;
+			float:left;
+			margin-right: 2%;
+			margin-bottom: 18px;
+			box-sizing: border-box;
+			text-align: left;
+			vertical-align: top;
+			
+			&:nth-of-type(2n+0) {
+				margin-right: 0;
+			}
+
+			a {
+				color: inherit;
+				display: block;
+				padding: 0;
+			}
+			.date {
+				height: 40px;
+			    width: 100%;
+			    line-height: 40px;
+			    margin: 0px 0 30px 0;
+			    padding: 0 2%;
+			    display: block;
+			    color: $black-100;
+			    background-color: $blue-dark-40;
+			    font-weight: bold;
+			    font-size: 16px;
+			}
+			.hsvar-dl {
+				display: block;
+				width: 150px;
+				background-image: url("../../img/icons/hsvar-dl.svg");
+				background-repeat: no-repeat;
+				background-size: 35px 35px;
+				background-position: 10px 5px;
+
+				@include white-button;
+				&:hover {
+					background-image: url("../../img/icons/hsvar-dl-hover.svg");
+				}
+				.icon {
+				    margin-right: 10px;
+				    float: left;
+				    
+
+				    &:hover {
+				    	
+				    	color: $white;
+						background-color: $black-100;
+				    }
+				}
+				p {
+					margin-bottom: 0;
+					text-align: right;
+    				margin-right: 5%;
+				}
+			}
+	}
+}
+
+section.pressebilder {
+	margin-bottom: 40px;
+
+	.year {
+		width: 100%;
+		height: auto;
+		float: left;
+		position: relative;
+		z-index: 2;
+	}
+   
+	.ansatt {
+		width: 100%;
+	    height: auto;
+	    display: inline-block;
+	    background-color: $white;
+	    font-size: 16px;
+	    margin: 0 3% 50px 0;
+	    padding-bottom: 50px;
+	    vertical-align: top;
+		padding: 50px 0 0 0;
+	}
+	.pressekontaktnavn {
+
+	}
+
+	.archive-header {
+		h5 {
+		    display: block;
+		    float: left;
+		    margin: 0 0 10px 0;
+		}
+	}
+
+	.ansatt-pressebilder {
+		img {
+			max-height: 214px;
+			width: inherit;
+			max-width: 100%;
+		}
+	}
+
+	.ansattbilde {
+		width: 30%;
+		height: 250px;
+		display: block;
+		float: left;
+		margin-right: 2%;
+		
+		
+
+		&:nth-of-type(3n+0) {
+			margin-right: 0;
+		}
+
+		img {
+			height: 205px;
+			width: 350px;
+			margin-bottom: 10px;
+			content: "";
+			background-color: $grey-100;
+			display: block;
+		}
+	}
+}
+@media screen and (max-width: 1025px) {
+	.pressemeldinger, section.arkivpressemelding, section.pressebilder,section.innsyn
+	 {
+		padding: 0 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	section.pressekontakter {
+		.ansatt {
+			width: 48%;
+			margin-right: 4%;
+
+			&:nth-of-type(2n+0) {
+				margin-right: 0;
+			}
+
+			&:nth-of-type(3n+0) {
+				margin-right: 4%;
+			}
+
+			&:nth-of-type(6n+0) {
+				margin-right: 0;
+			}
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	.image-w-info {
+		width: 100%;
+		margin-right: 0;
+		margin: 10px 0 10px 0;
+		float: left;
+	}
+	section.pressekontakter .ansatt {
+		width: 100%;
+		margin-right: 0;
+	}
+	.pressemeldinger .child, section.arkivpressemelding .child {
+		width: 100%;
+		max-width: 100%;
+	}
+	section.pressebilder .ansatt-pressebilder img {
+		height: initial;
+	}
+}

@@ -1,0 +1,109 @@
+/* Outer */
+#feedback-form {
+  color : #000;
+  margin-top : 40px;
+  padding-bottom : 40px;
+  padding-left: 0;
+  padding-right: 0;
+}
+  #feedback-form button {
+    padding : 10px;
+    padding-left : 30px;
+    padding-right : 30px;
+    margin : 0;
+    width : auto;
+    cursor : pointer;
+    font-size : 16px;
+  }
+
+  #feedback-form textarea,
+  #feedback-form button {
+    outline : none;
+    -webkit-box-sizing : border-box;
+    -moz-box-sizing : border-box;
+    -ms-box-sizing : border-box;
+    -o-box-sizing : border-box;
+    box-sizing : border-box;
+  }
+
+  /* Top */
+  #feedback-form-top {
+    border-bottom : 2px solid #000;
+    padding-top : 10px;
+    padding-bottom : 20px;
+  }
+    #feedback-form-top span {
+      font-size : 120%;
+      font-weight : bold;
+      margin-right : 20px;
+      display : inline-block;
+    }
+    #feedback-form-top button {
+      border : 2px solid #000;
+      background : #fff;
+      color : #000;
+      margin-left : 20px;
+      font-family: 'FFClanWebMedium', sans-serif;
+    }
+    #feedback-form-top button:active,
+    #feedback-form-top button.active {
+      background : #000;
+      color : #fff;
+    }
+
+  /* Form */
+  #feedback-form-inner {
+    text-align : right;
+    padding-top : 20px;
+    padding-bottom : 20px;
+    display : none;
+  }
+    #feedback-form-inner textarea {
+      width : 75%;
+      height : 200px;
+      display : inline-block;
+      border : 0 none;
+      resize : none;
+      border : 2px solid #000;
+      margin : 0;
+      padding : 10px;
+      margin-bottom : 10px;
+      font-size : initial;
+      font-family : inherit;
+      line-height: 1.5;
+    }
+    #feedback-form-inner button {
+      margin : 0;
+      background : #D9F5F6;
+      color : #000;
+      font-family: 'FFClanWebMedium', sans-serif;
+      border: none;
+    }
+
+
+  #feedback-form-result {
+    display : none;
+    text-align : center;
+    font-size : 250%;
+    padding-top : 20px;
+    padding-bottom : 20px;
+  }
+
+
+@media screen and (max-width: 480px) {
+    #feedback-form {
+      margin-top : 10px;
+      padding-bottom : 10px;
+    }
+    #feedback-form-top span {
+      display : block;
+      margin-right : 0;
+      margin-bottom : 10px;
+    }
+    #feedback-form-top button {
+      margin-left : 0;
+    }
+    #feedback-form-inner textarea {
+      width : 100%;
+    }
+}

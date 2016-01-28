@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 73.8 75" style="enable-background:new 0 0 73.8 75;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#010101;}
+	.st1{display:none;}
+	.st2{display:inline;}
+	.st3{display:inline;fill:none;stroke:#010101;stroke-width:4;stroke-miterlimit:10;}
+	.st4{display:inline;fill:#010101;}
+</style>
+<g id="Last_ned">
+	<g>
+		<path class="st0" d="M45.8,20.2c1,1,1.5,2.1,1.5,3.4v43H7.8v-43c0-1.4,0.5-2.5,1.4-3.4c0.9-0.9,2.1-1.4,3.4-1.4h29.8
+			C43.7,18.8,44.8,19.2,45.8,20.2z M43.1,23.6c0-0.4-0.2-0.7-0.6-0.7H12.6c-0.4,0-0.7,0.2-0.7,0.7v38.9h31.2V23.6z M18.2,35.4h18.7
+			v-4.2H18.2V35.4z M18.2,45.8h18.7v-4.2H18.2V45.8z M18.2,56.2h18.7v-4.2H18.2V56.2z M64.7,9.7c0.9,0.9,1.4,2,1.4,3.2v41.2H51.5V50
+			h10.4V12.9c0-0.3-0.2-0.4-0.7-0.4H31.3c-0.4,0-0.6,0.1-0.6,0.4v1.7h-4.2v-1.7c0-1.2,0.5-2.3,1.4-3.2c0.9-0.9,2.1-1.4,3.4-1.4h29.9
+			C62.6,8.4,63.8,8.8,64.7,9.7z"/>
+	</g>
+</g>
+<g id="RSS" class="st1">
+	<g class="st2">
+		<circle class="st0" cx="20.4" cy="54.6" r="4.1"/>
+		<g>
+			<path class="st0" d="M15.5,31.8v4.8c5,0.5,11,2.9,14.9,6.8c3.9,3.9,6.8,9.6,7.2,14.6h4.8C41.5,44,29.5,32.8,15.5,31.8z"/>
+			<path class="st0" d="M15.5,16.4v4.8c19,1,36.6,17.9,37.6,36.9h4.8C56.9,36,37.5,17.4,15.5,16.4z"/>
+		</g>
+	</g>
+</g>
+<g id="Ekstern_link" class="st1">
+	<g class="st2">
+		<path class="st0" d="M18.5,59c-0.9-0.9-1.4-2-1.4-3.2V14.6h14.6v4.2H21.3v37.1c0,0.3,0.2,0.4,0.7,0.4h29.9c0.4,0,0.6-0.1,0.6-0.4
+			V39.7h4.2v16.1c0,1.2-0.5,2.3-1.4,3.2c-0.9,0.9-2.1,1.4-3.4,1.4H21.9C20.6,60.4,19.4,59.9,18.5,59z"/>
+		<path class="st0" d="M56.7,14.6v18.3h-3.7l0-11.9L38,35.9l-2.7-2.7l14.9-14.9l-11.9,0l0-3.6L56.7,14.6z"/>
+	</g>
+</g>
+<g id="Pil" class="st1">
+	<polyline class="st3" points="31.2,26.2 42.6,37.5 31.2,48.8 	"/>
+</g>
+<g id="Kollaps_åpen" class="st1">
+	<polyline class="st4" points="25.2,39.3 48.6,39.3 48.6,35.7 25.2,35.7 	"/>
+</g>
+<g id="Kollaps_lukket" class="st1">
+	<polygon class="st4" points="48.6,35.7 38.7,35.7 38.7,25.8 35.1,25.8 35.1,35.7 25.2,35.7 25.2,39.3 35.1,39.3 35.1,49.2 
+		38.7,49.2 38.7,39.3 48.6,39.3 	"/>
+</g>
+</svg>

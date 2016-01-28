@@ -1,0 +1,226 @@
+section.klageguide {
+	.child-header {
+		padding: 15px 25px 14px;
+	    width: 100%;
+	    display: inline-block;
+	    height: 100%;
+	    cursor: pointer;
+	}	
+}
+/* Styling for klageguide */
+.page-template-klageguide {
+
+	.white_button {
+		    min-width: 170px;
+		    margin: 10px 10px 5px 0 ;
+	}
+
+	section.klageguide {
+		max-width: 100%;
+	}
+	.short-hr {
+		bottom: 0;
+		margin-bottom: 20px;
+	}
+	p.p1 {
+		max-width: 740px;
+		margin: 0 auto;
+	}
+	.klagesteps {
+		max-width: $pagemaxwidth;
+	    margin-top: 40px;
+	    padding: 0 40px;
+	    text-align: center;
+
+		.stegikon1, .stegikon2, .stegikon3 {
+			width: 25%;
+			margin: 0 1.4%;
+			display: inline-block;
+			text-decoration: none;
+		}
+		.stegikon1 .over, .stegikon2 .over, .stegikon3 .over{
+			display: none;
+		}
+
+		.stegikon1:hover .normal, .stegikon2:hover .normal, .stegikon3:hover .normal {
+			display: none;
+		}
+		.stegikon1:hover .over, .stegikon2:hover .over, .stegikon3:hover .over {
+			display: block;
+		}
+	}
+	.child {
+	    width: 100%;
+
+	    .black_button {
+			display: inline-block;
+			a {
+				min-height: 50px;
+				max-height: 50px;
+				line-height: 50px;
+				margin: 10px 0;
+				background-color: #000000;
+				display: block;
+				text-decoration: none;
+				color: $white;
+				text-align: center;
+				padding: 0 14px;
+
+				&:hover {
+					background-color: $white;
+					color: $black-100;
+					border: 3px solid $black-100;
+				}
+			}
+		}
+	    
+	}
+	.utvidet {
+		.archive-header-icon {
+			content: url("../../img/icons/kollaps-apen.svg");
+		}
+	}
+
+	.arrow {
+		height: 40px;
+		width: 40px;
+		display: block;
+		// float: left;
+		position: absolute;
+		bottom: -24px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		content: url("../../img/icons/klageguidesteparrow.svg");
+	}
+	.step-container {
+    	max-width: $pagemaxwidth;
+    	margin: 0 auto;
+	    	h1 {
+	    		display: table-cell;
+	    	}
+	    	.felt, .status_collapse {
+	    		display: none;
+	    	}
+	}
+	.parent {
+		background-color: transparent;
+		margin-bottom: 0px;
+	}
+	
+	.topheader {
+		width: 100%!important;
+	}
+	.topheader h2 p {
+		font-size: 35px;
+	}
+	#openclose {
+		top: 10px;
+	}
+	.step {
+		background-color: $blue-dark-20;
+		height: 190px;
+		width: 100%;
+		margin: 50px 0;
+		position: relative;
+
+		h1, h2 {
+			max-width: 1140px;
+			margin: 0 auto;
+		}
+		.step-info {
+			max-width: $pagemaxwidth;
+			margin: 0 auto;
+		}
+		span.number {
+			width: 100%;
+			max-width: $pagemaxwidth;
+			text-align: center;
+			font-size: 60px;
+			font-family: 'FFClanWebBook';
+			display: block;
+			margin-bottom: -15px;
+			padding-top: 15px;
+			position: relative;
+		}
+		.short-hr {
+			background-color: $white;
+			top: 10px;
+			margin-bottom: 0;
+		}
+		span.info {
+			width: 100%;
+			max-width: $pagemaxwidth;
+			padding-top: 30px;
+			text-align: center;
+			font-size: 26px;
+			font-family: 'FFClanWebMedium';
+			vertical-align: top;
+			display: block;
+			position: relative;
+		}
+		.felt {
+	    	display: none;
+	    }
+
+	}
+	.child-header {
+	    	h3 {
+	    		padding-top: 19px;
+	    		margin-bottom: 0;
+	    	}
+	    }
+	.child-header-icon {
+			height: 68px;
+			width: 14%;
+			max-width: 68px;
+			max-height: 68px!important;
+			margin-right: 40px;
+			margin-left: 20px;
+			vertical-align: middle;
+			display: inline-block;
+			border-radius: 45px;
+			float: left;
+			line-height: 68px;
+			text-align: center;
+			position: relative;
+			top: 0;
+		}
+		.toggle {
+			padding: 15px 25px 10px;	
+		}
+}
+
+@media screen and (max-width: 480px) {
+	.page-template-klageguide .klagesteps .stegikon1, 
+	.page-template-klageguide .klagesteps .stegikon2, 
+	.page-template-klageguide .klagesteps .stegikon3 {
+		width: 100%;
+		margin: 0;
+	}
+	.page-template-klageguide {
+
+		.step {
+			height: auto;
+			padding-bottom: 16px;
+		}
+
+		.child {
+			.child-header-icon, #openclose {
+				display: none;
+			}
+			h3 {
+				clear: both;
+				padding: 0;
+			}
+
+			.child-content {
+				padding: 0;
+			}
+		}
+	}
+	.page-template-prior-purchase main .parent, 
+	.page-template-after-purchase main .parent {
+		margin-bottom: 40px;
+	}
+}

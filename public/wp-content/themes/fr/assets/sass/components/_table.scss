@@ -1,0 +1,260 @@
+
+/* Include CSS Normalize */
+img {
+  max-width: 100%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  border-spacing: 0;
+
+  .informasjon {
+  	font-size: 0;
+  }
+  .hide {
+    display: inherit!important;
+    font-size: 0;
+  }
+}
+table.maintable {
+  .alignnone {
+    margin: 0;
+  }
+}
+table thead th {
+  padding: 0.35em 0 .35em;
+  font-weight: 400;
+  text-align: left;
+  font-size: 1.25em;
+}
+
+table tbody tr.eval {
+  background-color: #EEEEED;
+  border-bottom: 5px solid #fff;
+  border-top: none;
+  border-left: 0;
+  border-right: 0;
+  display: block;
+  margin: 0;
+  width: 290px;
+  min-height: 50px;
+  position: relative;
+
+}
+table tbody tr {
+  border: 2px solid #ddd;
+  margin: 5px 0;
+}
+table tbody tr td {
+  padding: .75em 0;
+  vertical-align: top;
+}
+table tbody tr td a {
+  // color: #008cba;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 .5em 0 0;
+}
+table tbody tr td a:hover, table tbody tr td a:active, table tbody tr td a:focus {
+  color: #006687;
+  border: none;
+}
+table tfoot td {
+  padding: 0.35em 0 .35em;
+  text-align: left;
+  font-size: 1.25em;
+}
+// /*Jeg  har satt inn */
+// #salttest tbody tr.eval   {
+//    border-bottom: 4px solid #fff;
+//     // line-height: 0.6;
+//   }
+  
+  
+// #sky h4 {
+//   font-size: 18px;
+//   font-weight: bold;
+// }
+  
+table {
+  display: block;
+}
+table tbody {
+  border: none;
+}
+table tbody, table th, table td, table tr, table tfoot {
+  display: block;
+}
+table thead {
+  display: none;
+}
+table tr {
+  float: left;
+  width: 100%;
+  margin: 0 0 3px;
+  border: 0px solid #ddd;
+  box-shadow: 0px #ddd;
+  border-radius: 0;
+}
+
+/*Jeg  har satt inn */
+#salttest table tr {
+  margin: 0 0 0px;
+  border: 0px solid #ddd;
+  box-shadow: 0px #ddd;
+  border-radius: 0;
+}
+
+table tr td {
+  padding: .5em 0;
+  float: left;
+  width: 100%;
+}
+
+
+table.maintable tr td:first-child {
+  width: 20%;
+  overflow: hidden;
+  padding-right: 2%;
+  padding-left: 5px;
+
+  img {
+  	width: 100%;
+  }
+}
+
+table.subtable {
+	margin: 0;
+}
+
+table.maintable tr td:nth-child(2) {
+  width: 35%;
+  padding-right: 5%;
+}
+
+table.maintable tr td:nth-child(3) {
+  width: 53%;
+  padding-right: 5px;
+}
+
+
+table.subtable tr td:first-child {
+  width: 240px;
+  overflow: hidden;
+  padding-right: 10px;
+  padding-left: 10px;
+  left: 0;
+}
+
+table.subtable tr td a {
+  vertical-align: middle;
+}
+
+table.subtable tr td:nth-child(2) {
+  width: 50px;
+  padding: 0;
+  right: 0;
+  vertical-align: middle;
+
+  img {
+    display: block;
+  }
+
+  br {
+    display: none;
+  }
+}
+
+table.subtable tr td:nth-child(3) {
+  width: 53%;
+}
+
+table tr th:before {
+  display: none;
+}
+
+
+@media screen and (max-width: 769px) {
+  table tr td:before {
+    display: none;
+  }
+
+  table.maintable tr td:first-child {
+    width: 30%;
+    overflow: hidden;
+  }
+
+  table.maintable tr td:nth-child(2) {
+    width: 70%;
+    padding-right: 15px;
+    text-align: right;
+  }
+
+  table.maintable tr td:nth-child(3) {
+    width: 100%;
+    padding: 0 5px;
+  }
+  table tbody tr.eval {
+    width: 100%;
+  }
+  table.subtable tr td:first-child {
+    width: 80%;
+    overflow: visible;
+  }
+
+  table.subtable tr td:nth-child(2) {
+    width: 20%;
+    padding-top: 5px;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  table {
+    display: table;
+    border: none;
+  }
+  table tbody {
+    // border-bottom: 3px solid #008cba;
+  }
+  table th, table td {
+    display: table-cell;
+  }
+  table tr {
+    display: table-row;
+    border: none;
+    border-bottom: 1px solid #eee;
+    float: none;
+    margin: 0;
+    box-shadow: none;
+  }
+  table tr td {
+    padding: .75em 0 0.75em .25em;
+    float: none;
+    width: auto;
+  }
+  table tr td:before {
+    padding: 0 !important;
+    content: '' !important;
+  }
+  table thead {
+    display: table-header-group;
+  }
+  table tbody, table tfoot {
+    display: table-row-group;
+  }
+  table tr:nth-of-type(even) {
+    background: none;
+  }
+}
+
+

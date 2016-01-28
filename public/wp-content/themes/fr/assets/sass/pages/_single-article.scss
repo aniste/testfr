@@ -1,0 +1,199 @@
+.page-template-single-fpa, .single-merke, .page-template-kontakt-oss, .page-template-contact-us, .single-klagebrev {
+	.main, main {
+		max-width: $pagemaxwidth;
+
+		.header {
+			max-width: $pagemaxwidth;
+			margin: 0 auto;
+		}
+
+		.parent {
+			// height: 120px;
+			height: auto;
+			display: block;
+			position: relative;
+			margin-bottom: 0;
+			background: none;
+		}
+		.topheader {
+			@include topheader;
+			top: 0;
+		}
+		.topheader {
+			text-align: left;
+			margin-top: 40px!important;
+			margin-left: 0;
+
+			p {
+				font-size: 26px;
+			}
+		}
+		.parent-content {
+			// margin-top: 90px;
+			margin-top: 0;
+			display: block;
+			position: relative;
+		}
+		.metainfo {
+			// margin: 50px 0 30px 0;
+			margin: 10px 0 30px 0;
+		}
+		.date {
+		    height: 40px;
+		    width: 100%;
+		    line-height: 40px;
+		    
+		    padding: 0 2%;
+		    display: block;
+		    color: $black-100;
+		    background-color: $blue-dark-40;
+		    font-weight: bold;
+		    font-size: 16px;
+		}
+		.article-content {
+			width: 58%;
+			max-width: 58%;
+			margin-right: 8%;
+			// margin-left: 2%;
+			float: left;
+			display: block;
+
+			.ingressteksten {
+				text-align: left!important;
+				margin-bottom: 40px;
+			}
+
+			p.article-ingress {
+				font-size: 20px;
+				max-width: 100%;
+				text-align: left;
+			}
+			h4 {
+				font-weight: bold;
+				margin-bottom: 20px;
+			}
+			.infografikk {
+				height: auto;
+		    	width: 98%;
+		    	
+		    	margin: 40px 0 50px;
+
+		    	.image {
+		    		height: 350px;
+		    		background-color: $grey-40;
+		    		color: $white;
+		    		padding: 20px 0;
+		    		text-align: center;
+		    	}
+		    	.caption {
+		    		margin: 10px 0;
+		    		font-size: 16px;
+		    	}
+			}
+			.half_infografikk {
+				height: auto;
+		    	width: 98%;
+		    	
+		    	margin: 40px 0 50px;
+
+		    	.image {
+		    		height: 270px;
+		    		background-color: $grey-40;
+		    		color: $white;
+		    		padding: 20px 0;
+		    		text-align: center;
+		    	}
+		    	.caption {
+		    		margin: 10px 0;
+		    		font-size: 16px;
+		    	}
+			}
+		}
+
+		.article-column {
+			width: 28%;
+			margin-right: 2%;
+			float: left;
+			display: block;
+
+			.ansatt {
+			    width: 100%;
+			    height: auto;
+			    display: block;
+			    background-color: $black-10;
+			    font-size: 16px;
+			    margin: 0 0 50px 0;
+			    padding-bottom: 15px;
+
+			    .bilde {
+			    	height: auto;
+			    	max-height: 180px;
+			    	background-color: $blue-40;
+			    	display: block;
+			    	margin-bottom: 10px;
+			    	overflow: hidden;
+
+			    	img {
+			    		width: 100%;
+			    	}
+			    }
+			    .navn {
+			    	font-size: 16px;
+			    	font-weight: bold;
+			    }
+			    .navn, .stilling, .epost, .telefon, .pressebilder {
+			    	margin-left: 15px;
+			    	line-height: 1.5;
+			    }
+			    .stilling {
+			    	margin: 10px 15px;
+			    }
+			    .pressebilder {
+			    	text-decoration: underline;
+			    	margin: 10px;
+			    }
+			}
+			.faktaboks {
+				padding: 15px 30px 15px 15px;
+				margin: 0 0 50px 0;
+				background-color: $blue-dark-20;
+
+				h3#tittel {
+					margin: 0 0 30px 0;
+					display: inline-block;
+					width: 100%;
+				}
+				
+			}
+			
+		}
+	}
+	.thirds-container {
+		max-width: $pagemaxwidth;
+		margin: auto;
+	}
+
+	.thirds {
+		width: 30%;
+		height: auto;
+		display: inline-block;
+		margin-right: 4.2%;
+
+		img.thirds {
+			height: 160px;
+			width: 100%;
+			margin-bottom: 20px;
+			display: block;
+			background-color: $black-10;
+		}
+		.thirds-text {
+			 h4{font-size: 22px;}
+		}
+
+	}
+	.thirds:nth-child(3) {
+		margin-right: 0;
+	}
+}
+
+

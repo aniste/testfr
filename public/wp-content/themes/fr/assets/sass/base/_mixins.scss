@@ -1,0 +1,38 @@
+@mixin parent-bg {
+	background-color: rgba(23,23,89,0.4);
+}
+@mixin topheader {
+	height: auto;
+	max-width: 740px;
+	margin: 0 auto;
+	padding: 15px;
+	display: block;
+	background-color: $white;
+	text-align: center;
+	position: relative;
+}
+@mixin white-button {
+	min-width: 100px;
+	padding: 10px 14px;
+	margin: 15px 10px 15px 0;
+	color: $black-100;
+	background-color: $white;
+	border: 4px solid $black-100;
+	cursor: pointer;
+	float: left;
+
+	&:hover {
+		color: $white;
+		background-color: $black-100;
+
+	}
+}
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+

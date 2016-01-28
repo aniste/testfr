@@ -1,0 +1,265 @@
+/*------------------------------------*\
+    FOOTER
+\*------------------------------------*/
+
+* {
+    margin: 0;
+}
+
+$footerheight: 325px;
+
+.page-wrap {
+  min-height: 100%;
+
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer {
+  /* .push must be the same height as footer */
+    height: $footerheight;
+}
+
+.page-wrap:after {
+
+}
+.site-footer {
+  background-color: $grey-10;
+  line-height: $footerheight;
+  // margin-top: -40px;
+  padding:50px 0;
+  position: relative;
+  z-index: 998;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    p {
+      line-height: 1.5;
+      margin-bottom: 5px;
+    }
+    h4 {
+      line-height: 1.5;
+      margin: 0 0 20px 0;
+      padding: 0 0 5px 0;
+      border-bottom-color: $blue-100;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+    }
+    #divide, .divide {
+      height: 10px;
+      width: auto;
+      content: "";
+    }
+}
+.footer-content {
+    max-width: $pagemaxwidth;
+    color: $white;
+    margin: 0 auto;
+
+    .col {
+        height: auto;
+        width: 20.66%;
+        display: inline-block;
+        margin:  0 19% 0 0;
+        color: $black-100;
+    }
+
+    #col3 {
+      margin: 0;
+
+      p.sosiale_medier {
+        display: block;
+        margin: 0 18px 0 0;
+        float: left;
+        cursor: pointer;
+      }
+
+      p.sosiale_medier > span {
+        display : block;
+        width : 45px;
+        height : 45px;
+        border-radius : 45px;
+        background-color : #000;
+        text-align : center;
+      }
+
+      p.sosiale_medier > span > i {
+        font-size : 25px;
+        line-height : 48px;
+        color : #fff;
+      }
+
+      p.fb {
+
+        span {
+          &:hover {
+            background-color : #3D5A98;
+          }
+        }
+      }
+      p.tw {
+        &:hover > span {
+          background-color : #29ABE2;
+        }
+      }
+      p.yt {
+        margin: 0;
+
+        &:hover > span {
+          background-color : #ED1C24;
+        }
+      }
+
+      p.rss, p.email {
+        // float: left;
+
+      }
+      p.rss > i,
+      p.epostvarsling > i {
+        width : 20px;
+      }
+
+      p.rss {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 6%;
+        display: block;
+
+      }
+      p.epostvarsling {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        display: block;
+      }
+    }
+    p.copyright {
+      position: absolute;
+      font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+
+    .footer-content {
+        .col {
+            width: 27.66%;
+            margin:  0 8% 0 0;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .footer-content {
+        padding: 0 20px;
+
+        .col {
+            width: 29.66%;
+            margin:  0 5% 0 0;
+        }
+
+        #col3 {
+            p.sosiale_medier {
+                margin: 0 12px 0 0;
+            }
+
+            p.sosiale_medier > span {
+                width: 40px;
+                height: 40px;
+                border-radius: 40px;
+            }
+
+            p.sosiale_medier > span > i {
+                font-size: 23px;
+                line-height: 41px;
+            }
+        }
+    }
+
+    .site-footer {
+        height: 335px;
+    }
+}
+
+
+@media screen and (max-width: 566px) {
+
+    .footer-content {
+        #col3 {
+            p.sosiale_medier {
+                margin: 0 7px 0 0;
+            }
+
+            p.sosiale_medier > span {
+                width: 36px;
+                height: 36px;
+                border-radius: 36px;
+            }
+
+            p.sosiale_medier > span > i {
+                font-size: 22px;
+                line-height: 37px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .push {
+        height: 200px;
+    }
+
+    .site-footer {
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .footer-content {
+        padding: 0 0px;
+
+        .col {
+            display: block;
+            width: 100%;
+            padding: 0 20px;
+            padding-bottom: 25px;
+            float: none;
+
+            &:first-child {
+                padding: 0 20px 25px 20px;
+            }
+        }
+
+        #col3 {
+            padding: 0 20px;
+
+            p.sosiale_medier {
+                margin: 0 12px 0 0;
+            }
+
+            p.sosiale_medier > span {
+                width: 40px;
+                height: 40px;
+                border-radius: 40px;
+            }
+
+            p.sosiale_medier > span > i {
+                font-size: 23px;
+                line-height: 41px;
+            }
+        }
+
+        p.copyright {
+            position: static;
+        }
+    }
+
+}

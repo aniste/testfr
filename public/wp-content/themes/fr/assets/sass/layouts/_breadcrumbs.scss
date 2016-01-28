@@ -1,0 +1,64 @@
+.page-template-frontpage, 
+.page-template-core-page-level2,
+.page-template-core-page-level2-andre-tema, 
+.page-template-kontrakter,
+.page-template-tester, 
+.page-template-guider, 
+.page-template-undersokelser, 
+// .page-template-fr-info,
+.page-template-kontakt-oss,
+.page-template-contact-us,
+.page-template-hsvar,
+.page-template-klagebrev,
+.page-template-merkeoversikten,
+.page-template-presse,
+.page-template-innlegg, 
+.page-template-fpa-bolig-samleside, 
+.page-template-fpa-finans-samleside, 
+.page-template-fpa-digital-samleside,
+.page-template-fpa-mat-og-handel-samleside,
+.page-template-fpa-offentlige-tjenester,
+.page-template-fr-info-ledig-stilling,
+.page-template-info-styret,
+.page-template-nytt-og-nyttig,
+.page-template-fr-info_m_bilde,
+ {
+	.breadcrumbs {
+		display: none;
+	}
+	.topper {
+    	border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+	}
+	.bread {
+		display: none;
+	}
+	.breader {
+		padding-top: 0;
+	}
+}
+.bread {
+    padding-left: 16px;
+    font-size: 12px;
+    top: -7px;
+    position: relative;
+    margin-bottom: 13px;
+}
+
+.C_breadcrumb {
+    font-size: 12px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+	.bread {
+		display: none;	    
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.C_breadcrumb {
+		display: none;
+	}
+}

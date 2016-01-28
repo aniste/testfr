@@ -1,0 +1,240 @@
+
+p.article-ingress {
+	max-width: 740px;
+	text-align: center;
+	margin: 0 auto;
+}
+.category {
+	width: 100%;
+	margin-top: 50px;
+	.head-container {
+		margin: 0 auto;
+	    margin-bottom: 50px;
+	    padding-top: 20px;
+	    padding-bottom: 15px;
+	    font-family: 'FFClanWebMedium';
+		background-color: $blue-dark-40;
+	}
+	h4.head {
+		max-width: $pagemaxwidth;
+		margin: 0 auto;
+	}
+}
+
+section.test {
+.year {
+		width: 100%;
+		height: auto;
+		float: left;
+
+	}
+	.featured {
+		display: none;
+	}
+	.featured-test {
+		margin-bottom: 70px;
+	}
+	.child {
+			width: 32%;
+			max-width: 32%;
+			height: auto;
+			display: inline-block;
+			margin-right: 2%;
+			margin-bottom: 18px;
+			box-sizing: border-box;
+			text-align: left;
+			vertical-align: top;
+			
+			&:nth-child(3n+0) {
+				margin-right: 0;
+			}
+
+			a {
+				color: inherit;
+				display: block;
+				padding: 0;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+			.date {
+				height: 40px;
+			    width: 100%;
+			    line-height: 40px;
+			    margin: 0px 0 30px 0;
+			    padding: 0 2%;
+			    display: block;
+			    color: $black-100;
+			    background-color: $blue-dark-40;
+			    font-weight: bold;
+			    font-size: 16px;
+			}
+			.article-image {
+				width: 100%;
+				// min-height: 245px;
+				margin-bottom: 20px;
+				background-color: $grey-40;
+			}
+			.test-image {
+				height: 100%;
+				width: 100%;
+			}
+			.hsvar-dl {
+				display: block;
+				width: 150px;
+				background-image: url("../../img/icons/hsvar-dl.svg");
+				background-repeat: no-repeat;
+				background-size: 35px 35px;
+				background-position: 10px 5px;
+				@include white-button;
+
+				&:hover {
+					background-image: url("../../img/icons/hsvar-dl-hover.svg");
+				}
+				.icon {
+				    margin-right: 10px;
+				    float: left;
+				    
+				    &:hover {
+				    	color: $white;
+						background-color: $black-100;
+				    }
+				}
+				p {
+					margin-bottom: 0;
+					text-align: right;
+    				margin-right: 5%;
+				}
+			}
+	}
+}
+
+.topheader h3 p {
+	font-size: 35px;
+}
+section.hside {
+	.year {
+		width: 100%;
+		height: auto;
+		float: left;
+
+	}
+	.child {
+			width: 49%;
+			max-width: 49%;
+			// min-width: 49%;
+			height: auto;
+			display: block;
+			float:left;
+			margin-right: 2%;
+			margin-bottom: 18px;
+			box-sizing: border-box;
+			text-align: left;
+			vertical-align: top;
+			
+			&:nth-child(2n+0) {
+				margin-right: 0;
+			}
+
+			a {
+				color: inherit;
+				display: block;
+				padding: 0;
+			}
+			.date {
+				height: 40px;
+			    width: 100%;
+			    line-height: 40px;
+			    margin: 0 0 30px 0;
+			    padding: 0 2%;
+			    display: block;
+			    color: $black-100;
+			    background-color: $blue-dark-40;
+			    font-weight: bold;
+			    font-size: 16px;
+			}
+			.hsvar-dl {
+				display: block;
+				width: 150px;
+				background-image: url("../../img/icons/hsvar-dl.svg");
+				background-repeat: no-repeat;
+				background-size: 35px 35px;
+				background-position: 10px 5px;
+
+				@include white-button;
+				&:hover {
+					background-image: url("../../img/icons/hsvar-dl-hover.svg");
+				}
+				.icon {
+				    margin-right: 10px;
+				    float: left;
+				    
+				    &:hover {
+				    	color: $white;
+						background-color: $black-100;
+				    }
+				}
+				p {
+					margin-bottom: 0;
+					text-align: right;
+    				margin-right: 5%;
+    				font-family: 'FFClanWebMedium', sans-serif;
+				}
+			}
+	}
+}
+@media screen and (max-width: 1140px) {
+	section.test {
+		padding: 0 20px;
+	}
+	section.hside {
+		padding: 0 20px;
+
+		.child {
+	    	max-width: 48%;
+    	    width: 48%;
+    	    margin-right: 4%;
+    	    // min-height: 590px;
+    	}
+	}
+}
+@media screen and (max-width: 768px) {
+
+	section.test {
+
+		.child {
+			max-width: 49%;
+			width: 49%;
+			margin-right: 2%;
+			float: left;
+			&:nth-child(3n+0) {
+				margin-right: 2%;
+			}
+			&:nth-child(2n+0){
+				margin-right: 0;
+			}
+		}
+		.siste {
+			text-align: center;
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	section.hside, section.test {
+		.kontrakt a{
+			padding: 0;
+		}
+	}
+	section.hside, section.test {
+
+		.child {
+			width: 100%;
+			max-width: 100%;
+    	    min-height: auto;
+    	}
+	}
+}

@@ -1,0 +1,228 @@
+.single-klagebrev {
+	.ninja-forms-form-title {
+		display: none;
+	}
+	main {
+		.parent-content {
+			.article-content {
+				padding-left: 0;
+			}
+		}
+	}
+	.ninja-forms-form {
+		textarea {
+			padding: 10px;
+		}
+		.field-wrap {
+			margin: 10px 0;
+		}
+		.textarea-wrap {
+			width: 100%!important;
+		}
+		.nf-desc {
+			// display: inline-block;
+			margin: 0 0 10px 0;
+		}
+		.nf-hide {
+			display: none;
+		}
+		.wrap-in-text {
+			display: inline-block;
+			width: auto;
+		}
+		h3 {
+			display: block!important;
+			width: 100%!important;
+		}
+		.text-wrap.label-inside {
+			input {
+				display: inline;
+			}
+		}
+	}
+}
+
+#ninja_forms_field_6_div_wrap,
+#ninja_forms_field_8_div_wrap,
+#ninja_forms_field_9_div_wrap,
+#ninja_forms_field_10_div_wrap,
+#ninja_forms_field_11_div_wrap,
+#ninja_forms_field_12_div_wrap,
+#ninja_forms_field_13_div_wrap,
+#ninja_forms_field_14_div_wrap,
+ {
+	width: 250px;
+}
+#ninja_forms_field_296_div_wrap {
+	width: 98%;
+}
+.ninja-forms-form, .wpcf7-form-control-wrap {
+	
+	input {
+		padding: 10px;
+	    display: block;
+	    background-color: rgba(56, 206, 213, 0.2);
+	    border: 0;
+	    color: black;
+	    min-width: 10px;
+	    // width: auto!important;
+        font-family: 'FFClanWebBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 16px;
+	}
+	.personal-info {
+		input {
+			width: 100%!important;
+		}
+	}
+	textarea {
+		width: 100%;
+	}
+
+  input[type=text],
+  input[type=password],
+  textarea {
+        font-family: 'FFClanWebBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	    font-size: 16px;
+  }
+  .unwrap-button {
+  	display: block!important;
+  }
+  button {
+    border : 2px solid #000;
+    background-color : #fff;
+    color : #000;
+    font-size : 16px;
+    font-family: 'FFClanWebMedium', Helvetica, Arial, sans-serif;
+    padding: 15px;
+    display: block;
+  }
+  button:hover,
+  button:active {
+    background-color : #000;
+    color : #fff;
+    cursor : pointer;
+  }
+
+}
+
+/* contact form 7 style*/
+.wpcf7-form {
+	.req {
+		color: red;
+	}
+	input.wpcf7-form-control.wpcf7-submit {
+		padding: 10px;
+	    display: block;
+	    background-color: rgba(56, 206, 213, 0.2);
+	    border: 0;
+	    color: black;
+	    font-size: 14px;
+	    cursor: pointer;
+	}
+}
+/* end */
+
+#ninja_forms_field_291_div_wrap, #ninja_forms_field_296_div_wrap {
+	margin: 20px 0;
+}
+#ninja_forms_field_297_div_wrap,
+#ninja_forms_field_298_div_wrap {
+	width: 50%;
+	float: left;
+
+	button {
+		width: 96%;
+	}
+}
+.page-template-klagebrev {
+
+	.collapse {
+		float: left;
+		height: auto;
+	}
+
+	.child {
+		width: 32%;
+		min-height: 230px;
+		padding: 15px;
+		padding-top: 1px;
+		margin-right: 2%;
+		background-color: $blue-10;
+		position: relative;
+
+		span.blue_button {
+			width: 48%;
+			font-family: 'FFClanWebMedium';
+		}
+		&:nth-of-type(3n+0) {
+			margin-right: 0;
+		}
+		a {
+			p:first-of-type {
+				min-height: 0;
+			}
+		}
+		p:first-of-type {
+			min-height: 80px;
+    font-family : 'FFClanWebMedium', sans-serif;
+
+		}
+		p:last-of-type {
+
+		}
+	}
+}
+
+
+#klagedato, .klagedato {
+  top: 28px;
+  right: 0px;
+}
+
+@media screen and (max-width: 1024px) {
+  .page-template-klagebrev {
+    .child {
+      min-height : 380px;
+
+      p:first-of-type {
+        min-height: 180px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+	.page-template-klagebrev {
+		section.klagebrev {
+			padding: 0 20px;
+		}
+		.child {
+			min-height: auto;
+
+			p:first-of-type {
+	        	min-height: 130px;
+	     	 }
+
+	     	 span.blue_button {
+	     	 	width: 98%;
+	     	 }
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.page-template-klagebrev {
+		.child {
+			width: 98%;
+			min-height: auto;
+
+			p:first-of-type {
+	        	min-height: 130px;
+	     	 }
+	     	 span.blue_button {
+	     	 	width: 48%;
+	     	 }
+		}
+	}
+}

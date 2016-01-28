@@ -1,0 +1,36 @@
+section.kontrakter {
+	.kontraktkategori {
+		margin-bottom: 40px;
+	}
+	.kontrakt {
+		width: 49%!important;
+		max-width: 49%!important;
+		min-height: 250px;
+		margin-right: 0!important;
+
+		h3:hover, h4:hover {
+			text-decoration: underline;
+		}
+
+	}
+	.child:nth-child(2n+0) {
+		margin-right: 2%!important;
+	}
+}
+@media screen and (max-width: 1025px) {
+
+}
+
+@media screen and (max-width: 480px){
+	section.kontrakter {
+		.kontraktkategori {
+			margin-bottom: 40px;
+		}
+		.kontrakt {
+			width: 100%!important;
+			max-width: 100%!important;
+			min-height: initial;
+		}
+	}
+}
+

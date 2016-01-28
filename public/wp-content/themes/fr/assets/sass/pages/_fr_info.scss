@@ -1,0 +1,199 @@
+.page-template-fr-info_m_bilde {
+	hr {
+		margin-bottom: 30px;
+	}
+}
+
+.intro_text {
+	max-width: 740px;
+	margin: 0 auto;
+	text-align: center;
+	p {
+		font-size: 26px;
+	}
+}
+.page-template-fr-info {
+
+	hr {
+		margin-bottom: 25px;
+	}
+	.article-content {
+		width: 66%;
+		max-width: 66%;
+		margin-right: 3%;
+			p {
+				@include pie-clearfix();
+			}
+		}
+	.article-column {
+		width: 24%;
+		margin-right: 0;
+		float: right;
+	}
+}
+
+.blue-field {
+	background-color: $blue-20;
+	// margin-bottom: -25px;
+}
+
+.blue-field-container {
+	max-width: $pagemaxwidth;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+.om_oss_add {
+	
+	span.white_button {
+		width: calc(100% / 4.2);
+    	margin-right: calc(100% / 64);
+    	margin-top: 10px;
+    	margin-bottom: 10px;
+    	float: left;
+    	
+	}
+	span.white_button:nth-of-type(4n+0) {
+		margin-right: 0;
+	}
+	span.white_button:nth-of-type(5n+0) {
+		margin-left: 0;
+	}
+	span.white_button:last-of-type {
+		@include pie-clearfix();
+	}
+}
+
+.page-template-fr-info-styret {
+
+	hr {
+		margin-bottom: 25px;
+	}
+
+	.wp-ansatte {
+		background-color: $blue-20;
+
+		.wig-content {
+			max-width: $pagemaxwidth;
+			margin: 0 auto;
+			padding: 40px 0 0px 0;
+		}
+	}
+	.threecolumn {
+		min-height: 175px;
+		@include clearfix();
+		display: block;
+		float: left;
+		margin-left: 0;
+		margin-right: 2.3%;
+
+		p {
+			margin-bottom: 20px;
+		}
+		p:last-of-type{
+			display: none;
+		}
+	}
+	.styret_add {
+		background-color: $blue-40;
+		display: block;
+
+		.wig-content {
+			display: block;
+		}
+	}
+	.styrets_medlemmer {
+		h4{
+			font-family: 'FFClanWebBook', sans-serif;
+			margin: 0;
+		}
+	}
+}
+
+.page-template-fr-info-ledig-stilling {
+	hr {
+		margin-bottom: 25px;
+	}
+}
+@media screen and (max-width: 1035px){
+	.page-template-fr-info-styret {
+		.styrets_medlemmer {
+			h4{
+				font-size: 2.5vw;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	.blue-field-container {
+		padding: 40px 20px;
+	}
+	.page-template-fr-info-styret {
+		.styrets_medlemmer {
+			h4{
+				font-size: 3.5vw;
+			}
+		}
+	}
+
+	.page-template-fr-info_m_bilde,
+	.page-template-fr-info_u_bilde,
+	.page-template-fr-info, 
+	.page-template-fr-info-styret,
+	.page-template-fr-info-ledig-stilling {
+		.parent-content {
+			padding: 0 20px;
+		}
+	}
+	.page-template-fr-info-styret {
+		.wp-ansatte {
+			padding: 0 20px;
+		}
+	}
+	.om_oss_add {
+	
+		span.white_button {
+			width: 49%;
+	    	margin-right: 2%;
+	    	margin-top: 10px;
+	    	margin-bottom: 10px;
+	    	float: none;
+	    	
+		}
+		span.white_button:nth-of-type(2n+0) {
+			margin-right: 0;
+		}
+		span.white_button:nth-of-type(5n+0) {
+			margin-left: 0;
+		}
+		span.white_button:last-of-type {
+			@include pie-clearfix();
+		}
+	}
+}
+
+@media screen and (max-width: 480px){
+	.page-template-fr-info-styret {
+		.styrets_medlemmer {
+			h4{
+				font-size: 6vw;
+			}
+		}
+	}
+	.om_oss_add {
+		span.white_button {
+			width: 100%;
+	    	margin-right: 0;
+	    	margin-top: 10px;
+	    	margin-bottom: 10px;
+	    	float: left;
+	    	
+			}
+	}
+}
+
+
+
+
+
